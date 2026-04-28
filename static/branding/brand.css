@@ -1,0 +1,10 @@
+:root {
+  --brand-primary: #2b4921;
+  --brand-accent: #d75128;
+  --brand-accent-2: #ffa119;
+  --brand-white: #ffffff;
+}
+
+.ctk-font {
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}

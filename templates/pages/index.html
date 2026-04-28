@@ -1,0 +1,1185 @@
+{% extends "base.html" %}{% load static %}{% block page_head %}
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link as="font" crossorigin="" href="{% static 'site_mirror/_next/static/media/e8f2fbee2754df70-s.p.9b7a96b4.woff2' %}" rel="preload" type="font/woff2"/>
+<link as="image" href="{% static 'site_mirror/ctklogo.svg' %}" rel="preload"/>
+<link as="image" fetchpriority="high" imagesizes="(max-width: 640px) 640w, (max-width: 1024px) 1024w, 1920w" imagesrcset="/static/site_mirror/_next/image/images/immigration-thumb.webp 32w, /static/site_mirror/_next/image/images/immigration-thumb.webp 48w, /static/site_mirror/_next/image/images/immigration-thumb.webp 64w, /static/site_mirror/_next/image/images/immigration-thumb.webp 96w, /static/site_mirror/_next/image/images/immigration-thumb.webp 128w, /static/site_mirror/_next/image/images/immigration-thumb.webp 256w, /static/site_mirror/_next/image/images/immigration-thumb.webp 384w, /static/site_mirror/_next/image/images/immigration-thumb.webp 640w, /static/site_mirror/_next/image/images/immigration-thumb.webp 750w, /static/site_mirror/_next/image/images/immigration-thumb.webp 828w, /static/site_mirror/_next/image/images/immigration-thumb.webp 1080w, /static/site_mirror/_next/image/images/immigration-thumb.webp 1200w, /static/site_mirror/_next/image/images/immigration-thumb.webp 1920w, /static/site_mirror/_next/image/images/immigration-thumb.webp 2048w, /static/site_mirror/_next/image/images/immigration-thumb.webp 3840w" rel="preload"/>
+<link as="image" href="{% static 'site_mirror/images/affiliations/tosk-sticker.png' %}" rel="preload"/>
+<link as="image" href="{% static 'site_mirror/images/affiliations/ysmen-kenya-district.webp' %}" rel="preload"/>
+<link data-precedence="next" href="{% static 'site_mirror/_next/static/chunks/98a34cf9b021881f.css' %}" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://www.google-analytics.com" rel="preconnect"/>
+<link href="https://www.googletagmanager.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com" rel="dns-prefetch"/>
+<link href="https://www.googletagmanager.com" rel="dns-prefetch"/>
+<link href="{% static 'site_mirror/apple-touch-icon.png' %}" rel="apple-touch-icon" sizes="180x180"/>
+<link href="{% static 'site_mirror/favicon-32x32.png' %}" rel="icon" sizes="32x32" type="image/png"/>
+<link href="{% static 'site_mirror/favicon-16x16.png' %}" rel="icon" sizes="16x16" type="image/png"/>
+<link href="{% static 'site_mirror/site.webmanifest' %}" rel="manifest"/>
+<link color="#2b4921" href="{% static 'site_mirror/safari-pinned-tab.svg' %}" rel="mask-icon"/>
+<meta content="#2b4921" name="msapplication-TileColor"/>
+<meta content="#2b4921" name="theme-color"/>
+<meta content="" name="next-size-adjust"/>
+<title>Come Travel Kenya | Premier DMC for Kenya Safaris, MICE &amp; Travel Services</title>
+<meta content="Experience authentic Kenya with Come Travel Kenya - your trusted Destination Management Company offering safaris, MICE services, transport logistics, immigration assistance, and flight coordination since 2019." name="description"/>
+<link href="https://cometravelkenya.com" rel="author"/>
+<meta content="Come Travel Kenya" name="author"/>
+<meta content="Kenya DMC, Destination Management Company Kenya, Kenya safari operator, MICE services Kenya, Kenya tours and safaris, Kenya travel agency, Maasai Mara safari, Kenya visa services, ETA Kenya, Kenya work permit, conference venues Kenya, incentive travel Kenya, Kenya airport transfers, best safari company in Kenya, affordable Kenya safari packages, corporate event planning Nairobi, Kenya immigration consultant, luxury Kenya safari tours, Tembea Kenya packages, Nairobi tour operator, Mombasa beach holidays, Amboseli tours, Lake Nakuru safari, Samburu safari packages, book Kenya safari, plan Kenya trip, Kenya travel packages, Kenya business travel, Kenya holiday deals" name="keywords"/>
+<meta content="Come Travel Kenya Limited" name="creator"/>
+<meta content="Come Travel Kenya Limited" name="publisher"/>
+<meta content="index, follow" name="robots"/>
+<meta content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" name="googlebot"/>
+<meta content="Travel &amp; Tourism" name="category"/>
+<meta content="Business" name="classification"/>
+<meta content="KE-110" name="geo.region"/>
+<meta content="Nairobi" name="geo.placename"/>
+<meta content="-1.2832;36.7297" name="geo.position"/>
+<meta content="-1.2832, 36.7297" name="ICBM"/>
+<link href="https://cometravelkenya.com" rel="canonical"/>
+<meta content="telephone=no, address=no, email=no" name="format-detection"/>
+<meta content="google-site-verification=EU75yNd1A9btGxAlhNuaVhTZ_s_Y-Ur_T_8VL7a6Tz8" name="google-site-verification"/>
+<meta content="de2c31188f1a6f1b" name="yandex-verification"/>
+<meta content="Come Travel Kenya - Kenya's Leading DMC &amp; Safari Operator" property="og:title"/>
+<meta content="Authentic Kenya experiences: Wildlife safaris, MICE events, transport, immigration &amp; flight services. 5+ years of excellence. Book your Kenya adventure today!" property="og:description"/>
+<meta content="{% static 'site_mirror/og-image.jpg' %}" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="Come Travel Kenya - Safari, MICE Services &amp; Travel Solutions" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@ComeTravelKE" name="twitter:site"/>
+<meta content="@ComeTravelKE" name="twitter:creator"/>
+<meta content="Come Travel Kenya - Premier Kenya DMC &amp; Safari Operator" name="twitter:title"/>
+<meta content="Authentic Kenya safaris, MICE services, and travel solutions. Experience Kenya with a difference." name="twitter:description"/>
+<meta content="{% static 'site_mirror/twitter-image.jpg' %}" name="twitter:image"/>
+<link href="{% static 'site_mirror/favicon-favicon-77ff4a1c-ico.ico' %}" rel="icon" sizes="344x340" type="image/x-icon"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TravelAgency","@id":"https://cometravelkenya.com/#organization","name":"Come Travel Kenya Limited","alternateName":"Come Travel Kenya","slogan":"Experience with a difference","description":"Come Travel Kenya Limited is a leading Destination Management Company (DMC) based in Nairobi, offering comprehensive safari tours, MICE services, transport logistics, immigration assistance, and flight coordination across Kenya.","url":"https://cometravelkenya.com","logo":{"@type":"ImageObject","url":"https://cometravelkenya.com/logo.png","width":512,"height":512},"image":"https://cometravelkenya.com/ctk-logo.png","telephone":["+254711082254","+254746910570"],"email":"safaris@cometravelkenya.com","address":{"@type":"PostalAddress","streetAddress":"Roslyn Riviera Mall, Limuru Road","addressLocality":"Nairobi","addressRegion":"Nairobi County","postalCode":"00100","addressCountry":"KE"},"geo":{"@type":"GeoCoordinates","latitude":-1.2832,"longitude":36.7297},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],"areaServed":[{"@type":"Country","name":"Kenya"},{"@type":"GeoCircle","geoMidpoint":{"@type":"GeoCoordinates","latitude":-1.2832,"longitude":36.7297},"geoRadius":"1000km"}],"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Service","telephone":"+254711082254","email":"safaris@cometravelkenya.com","availableLanguage":["English","Swahili"],"hoursAvailable":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}},{"@type":"ContactPoint","contactType":"Sales","telephone":"+254746910570","email":"safaris@cometravelkenya.com","availableLanguage":["English","Swahili"]}],"sameAs":["https://web.facebook.com/cometravelkenya/","https://instagram.com/cometravelkenya_","https://www.linkedin.com/company/come-travel-kenya/","https://x.com/@ComeTravelKe"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Travel Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"MICE Services","description":"Professional event management and corporate travel solutions"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Kenya Safari Tours","description":"Unforgettable wildlife safaris and cultural tours"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Transport & Logistics","description":"Professional vehicle hire and logistics services"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Immigration Services","description":"Complete visa, permit, and immigration support"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Flight Coordination","description":"Domestic and charter flight logistics"}}]},"priceRange":"$$-$$$","foundingDate":"2019","knowsAbout":["Safari Tours","MICE Services","Corporate Events","Travel Logistics","Immigration Services","Kenya Tourism","Wildlife Conservation","Cultural Tourism","Conferences","Wedding Planners"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://cometravelkenya.com/#website","url":"https://cometravelkenya.com","name":"Come Travel Kenya","description":"Kenya's Premier Destination Management Company","publisher":{"@id":"https://cometravelkenya.com/#organization"},"inLanguage":"en-KE"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cometravelkenya.com"}]}</script>
+{% endblock %}
+
+{% block page_content %}
+<div hidden="">
+<!--/$-->
+</div>
+<noscript>
+<iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-WMCWW4KD" style="display:none;visibility:hidden" title="Google Tag Manager" width="0">
+</iframe>
+</noscript>
+<div class="bg-[#2b4921] text-white transition-all duration-300 hidden md:block py-3 opacity-100">
+<div class="container mx-auto px-4">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-3">
+<a aria-label="Facebook" class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white hover:text-[#2b4921] transition-all duration-300 hover:scale-110" href="https://web.facebook.com/cometravelkenya/" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" class="lucide lucide-facebook w-4 h-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+</path>
+</svg>
+</a>
+<a aria-label="Instagram" class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white hover:text-[#2b4921] transition-all duration-300 hover:scale-110" href="https://instagram.com/cometravelkenya_" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" class="lucide lucide-instagram w-4 h-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<rect height="20" rx="5" ry="5" width="20" x="2" y="2">
+</rect>
+<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z">
+</path>
+<line x1="17.5" x2="17.51" y1="6.5" y2="6.5">
+</line>
+</svg>
+</a>
+<a aria-label="Twitter" class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white hover:text-[#2b4921] transition-all duration-300 hover:scale-110" href="https://x.com/@ComeTravelKe" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" class="lucide lucide-twitter w-4 h-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+</path>
+</svg>
+</a>
+<a aria-label="LinkedIn" class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white hover:text-[#2b4921] transition-all duration-300 hover:scale-110" href="https://www.linkedin.com/company/come-travel-kenya/" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" class="lucide lucide-linkedin w-4 h-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+</path>
+<rect height="12" width="4" x="2" y="9">
+</rect>
+<circle cx="4" cy="4" r="2">
+</circle>
+</svg>
+</a>
+</div>
+<div class="flex items-center gap-6 text-sm">
+<div class="flex items-center gap-2 bg-white/10 px-3 py-1 rounded-full">
+<svg aria-hidden="true" class="lucide lucide-clock w-3 h-3" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6v6l4 2">
+</path>
+<circle cx="12" cy="12" r="10">
+</circle>
+</svg>
+<span class="font-medium text-xs">Loading...<!-- --> EAT</span>
+</div>
+<a class="flex items-center gap-2 hover:text-white/80 transition-colors whitespace-nowrap" href="tel:+254711082254">
+<svg aria-hidden="true" class="lucide lucide-phone w-4 h-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
+</path>
+</svg>
+<span>+254 711 082 254</span>
+</a>
+<span class="text-white/30">|</span>
+<a class="flex items-center gap-2 hover:text-white/80 transition-colors whitespace-nowrap" href="tel:+254746910570">
+<svg aria-hidden="true" class="lucide lucide-phone w-4 h-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
+</path>
+</svg>
+<span>+254 746 910 570</span>
+</a>
+<a class="flex items-center gap-2 hover:text-white/80 transition-colors whitespace-nowrap" href="/cdn-cgi/l/email-protection#c3b0a2a5a2b1aab083a0acaea6b7b1a2b5a6afa8a6adbaa2eda0acae">
+<svg aria-hidden="true" class="lucide lucide-mail w-4 h-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7">
+</path>
+<rect height="16" rx="2" width="20" x="2" y="4">
+</rect>
+</svg>
+<span>
+<span class="__cf_email__" data-cfemail="80f3e1e6e1f2e9f3c0e3efede5f4f2e1f6e5ecebe5eef9e1aee3efed">[email protected]</span>
+</span>
+</a>
+<a class="flex items-center gap-2 hover:text-white/80 transition-colors whitespace-nowrap" href="/about">
+<span>About</span>
+</a>
+<a class="flex items-center gap-2 hover:text-white/80 transition-colors whitespace-nowrap" href="/services">
+<span>Services</span>
+</a>
+<a class="flex items-center gap-2 hover:text-white/80 transition-colors whitespace-nowrap" href="/blog">
+<span>Our Blog</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<main>
+<div class="relative h-screen w-full bg-gray-900 overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-[#2b4921]/20 via-black/70 to-transparent">
+</div>
+<div class="relative h-full flex items-center justify-center">
+<div class="text-center px-4">
+<div class="relative w-20 h-20 mx-auto mb-6">
+<div class="absolute inset-0 rounded-full border-4 border-[#2b4921]/30 animate-pulse">
+</div>
+<div class="absolute inset-0 rounded-full border-4 border-white/10">
+</div>
+<div class="absolute inset-0 rounded-full border-4 border-transparent border-t-[#d75128] border-r-[#ffa119] animate-spin">
+</div>
+</div>
+<div class="inline-block px-5 py-2.5 bg-gradient-to-r from-[#2b4921] via-[#d75128] to-[#ffa119] text-white text-sm font-bold rounded-full shadow-lg mb-4">Destination Management Company</div>
+<div class="text-3xl md:text-4xl font-bold text-white mb-2">Come Travel Kenya</div>
+<p class="text-white/70 text-lg">Preparing your experience...</p>
+</div>
+</div>
+</div>
+<!--/$-->
+<!--/$-->
+</main>
+</div>
+<audio hidden="" src="data:audio/mpeg;base64,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REArE4lpmZT/+1JkEADxlCbZdxoAAAAADSDgAAEF3SF744BeeAAANIAAAASv9////+taLiky6Cp1v////0kHmKqpVTABgASAoccNyB4ikRsRIlh0xM06xx2sMv//+n1T//f3Ekunug///yHBIop5mqqpcQFsA34KezhQoLY4G7FAQETYxdIBN//Ry37VT6P//jP/////J/5n//+yiKpZ4iZmnQBpCPwIBGbgLSS5qCW8A7rE/eAM4DJ//6t2/9Gt//iu3////+h7f9W//+XoameICJl0AeQgcP/7UmQ1gPGCSF74wynEAAANIAAAAQYhHXPhmUkYAAA0gAAABAuJusuoKS11nk3PqsmesmPExAlBt/t+l/XUyO///Hqf////UcMCU1nd4iHcwXkAGAHgOp8ymbqUkZss1akzHJgtSx+cATyDv9X//SUe///UMz////VA6FWSXDaEGtABgBUrhuKhf3/ahz2F+akB9EDdCRJz1n9f/+tZw32d//54VY8v/////Ea5sNv4gxmAIAeTSY3O690akjNVBMwTQMxjCKgafDs1///6JiUT//tSZFsA8YJIWvmgP5QAAA0gAAABBgUbZeaA/lgAADSAAAAE+p//9Yrq////scUqV3iICHQFrgAgLspqdbJ/UzJoG7JmhBy8ECY6X3//6BdH0tlHj//9Qrh////7KIYt22xBHYAoF9Flop3XVrc2JkpG+5MjmgYpILcjR///WpJMmCWbX//xzjT9X//7IAuUff+oATADAJ26CLzZJaDrWjUswqMyMNgJZIv///+cIKbIpn1//5G/1M//0NcE3F23HpBEgCYGoTk4h9oTq4F94B3/+1JkgQDxhCbU6QyjJAAADSAAAAEF9RtbqYBeUAAANIAAAARAcY9tb///uUh3qUs0//0hBQev////+3/se//7GJg6BFEuQAnQaYG/ITqzWOawGSnjDvgQBGFg+aV/hgIGOrMGKS1bf/oGZ5EfxpLRmf+rzMoAZVkGFDY0ToP////0//UXVf/qQojZAR/ApJgJTp2sjzBdWrEvltOqAMAYxTFo1R8cxYEkv8j616Haaz30m//sajVFwM8y/1IpIl0mgKAMAFEgNA0rkRS2////5//7UmSnAPF0Rtn6ABecAAANIAAAAQYNG1eqAL5QAAA0gAAABD/ykVm//Y4mPomxtQIBggAd23uv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">
+</audio>
+</div>
+</footer>
+<script>requestAnimationFrame(function(){$RT=performance.now()});</script>
+<div hidden="" id="S:0">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What services does Come Travel Kenya offer?","acceptedAnswer":{"@type":"Answer","text":"Come Travel Kenya offers comprehensive travel services including Kenya safari tours (Maasai Mara, Amboseli, Tsavo), MICE services (meetings, conferences, incentive travel), transport and logistics, immigration services (ETA, visas, work permits), and flight coordination across Kenya."}},{"@type":"Question","name":"How long has Come Travel Kenya been in business?","acceptedAnswer":{"@type":"Answer","text":"Come Travel Kenya has been operating since 2019, providing trusted destination management services for over 5 years. We've successfully served 1,000+ clients from around the world."}},{"@type":"Question","name":"Do you organize safaris for international tourists?","acceptedAnswer":{"@type":"Answer","text":"Yes! We specialize in inbound safaris for international visitors, offering customized packages to Kenya's top destinations including Maasai Mara, Amboseli, Samburu, and coastal beaches. We handle all logistics from airport pickup to accommodation."}},{"@type":"Question","name":"Can you help with Kenya visa and immigration services?","acceptedAnswer":{"@type":"Answer","text":"Absolutely! We provide complete immigration assistance including Kenya ETA applications, visa extensions, work permits (Class A, B, C, D, G), student permits, and resident passport applications."}}]}</script>
+<main class="min-h-screen">
+<section aria-label="Hero slider showcasing Come Travel Kenya services" class="relative h-screen overflow-hidden">
+<div class="relative h-screen overflow-hidden bg-gray-900">
+<div class="absolute inset-0" style="opacity:1">
+<img alt="Kenya, Expertly Managed" class="object-cover" data-nimg="fill" decoding="async" fetchpriority="high" loading="eager" sizes="(max-width: 640px) 640w, (max-width: 1024px) 1024w, 1920w" src="{% static 'site_mirror/_next/image/images/immigration-thumb.webp' %}" srcset="/static/site_mirror/_next/image/images/immigration-thumb.webp 32w, /static/site_mirror/_next/image/images/immigration-thumb.webp 48w, /static/site_mirror/_next/image/images/immigration-thumb.webp 64w, /static/site_mirror/_next/image/images/immigration-thumb.webp 96w, /static/site_mirror/_next/image/images/immigration-thumb.webp 128w, /static/site_mirror/_next/image/images/immigration-thumb.webp 256w, /static/site_mirror/_next/image/images/immigration-thumb.webp 384w, /static/site_mirror/_next/image/images/immigration-thumb.webp 640w, /static/site_mirror/_next/image/images/immigration-thumb.webp 750w, /static/site_mirror/_next/image/images/immigration-thumb.webp 828w, /static/site_mirror/_next/image/images/immigration-thumb.webp 1080w, /static/site_mirror/_next/image/images/immigration-thumb.webp 1200w, /static/site_mirror/_next/image/images/immigration-thumb.webp 1920w, /static/site_mirror/_next/image/images/immigration-thumb.webp 2048w, /static/site_mirror/_next/image/images/immigration-thumb.webp 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent">
+</div>
+<div class="relative h-full flex items-center">
+<div class="container mx-auto px-4 md:px-8 lg:px-12">
+<div class="max-w-4xl" style="opacity:1;transform:none">
+<div class="mb-4" style="opacity:1;transform:none">
+<span class="inline-block px-5 py-2.5 bg-gradient-to-r from-[#d75128] to-[#ffa119] text-white text-sm font-bold rounded-full shadow-lg">Destination Management Company</span>
+</div>
+<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight" style="opacity:1;transform:none">Kenya, Expertly Managed</h1>
+<p class="text-xl sm:text-2xl md:text-3xl text-white/95 mb-8 leading-relaxed font-medium max-w-3xl" style="opacity:1;transform:none">A Destination Management Company specializing in MICE, Events and experiential travel across Kenya</p>
+<div class="flex flex-wrap gap-4" style="opacity:1;transform:none">
+<a class="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-[#d75128] to-[#ffa119] text-white font-bold rounded-lg shadow-2xl hover:shadow-3xl transition-all flex items-center gap-2 text-sm sm:text-base" href="/contact" tabindex="0">Plan Your Kenya Program<svg aria-hidden="true" class="lucide lucide-arrow-right w-4 h-4 sm:w-5 sm:h-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 12h14">
+</path>
+<path d="m12 5 7 7-7 7">
+</path>
+</svg>
+</a>
+<a class="px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-md text-white font-bold rounded-lg border-2 border-white/30 hover:bg-white/20 transition-all text-sm sm:text-base" href="/services/tours-safaris" tabindex="0">Explore Experiential Safaris</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<button aria-label="Previous slide" class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-white/20 backdrop-blur-sm hover:bg-white/30 rounded-full flex items-center justify-center transition-all group z-10">
+<svg aria-hidden="true" class="lucide lucide-chevron-left w-5 h-5 sm:w-6 sm:h-6 text-white group-hover:scale-110 transition-transform" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="m15 18-6-6 6-6">
+</path>
+</svg>
+</button>
+<button aria-label="Next slide" class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-white/20 backdrop-blur-sm hover:bg-white/30 rounded-full flex items-center justify-center transition-all group z-10">
+<svg aria-hidden="true" class="lucide lucide-chevron-right w-5 h-5 sm:w-6 sm:h-6 text-white group-hover:scale-110 transition-transform" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="m9 18 6-6-6-6">
+</path>
+</svg>
+</button>
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 sm:gap-3 z-10">
+<button aria-label="Go to slide 1" class="transition-all w-8 sm:w-12 h-2 sm:h-3 bg-gradient-to-r from-[#d75128] to-[#ffa119] rounded-full">
+</button>
+<button aria-label="Go to slide 2" class="transition-all w-2 sm:w-3 h-2 sm:h-3 bg-white/50 hover:bg-white/70 rounded-full">
+</button>
+<button aria-label="Go to slide 3" class="transition-all w-2 sm:w-3 h-2 sm:h-3 bg-white/50 hover:bg-white/70 rounded-full">
+</button>
+<button aria-label="Go to slide 4" class="transition-all w-2 sm:w-3 h-2 sm:h-3 bg-white/50 hover:bg-white/70 rounded-full">
+</button>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-20 bg-white">
+<div class="container mx-auto px-4 md:px-8 lg:px-12">
+<div class="text-center mb-12 md:mb-16">
+<span class="inline-block px-5 py-2 bg-gradient-to-r from-[#d75128] to-[#ffa119] text-white text-sm font-bold rounded-full shadow-lg mb-4">Who We Serve</span>
+<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#2b4921] mb-4">Two Ways to Experience Kenya</h2>
+<div class="w-24 h-1 bg-gradient-to-r from-[#d75128] to-[#ffa119] mx-auto rounded-full">
+</div>
+</div>
+<div class="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+<div class="group">
+<a aria-label="For Organizations, Corporates &amp; Global Partners — Become a Partner" href="/travel-agents">
+<div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 md:p-10 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 hover:border-[#d75128]/30 h-full">
+<div class="w-16 h-16 bg-gradient-to-br from-[#2b4921] to-[#2b4921] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<svg aria-hidden="true" class="lucide lucide-building2 lucide-building-2 w-8 h-8 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 12h4">
+</path>
+<path d="M10 8h4">
+</path>
+<path d="M14 21v-3a2 2 0 0 0-4 0v3">
+</path>
+<path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2">
+</path>
+<path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16">
+</path>
+</svg>
+</div>
+<h3 class="text-2xl md:text-3xl font-bold text-[#2b4921] mb-4 group-hover:text-[#d75128] transition-colors">For Organizations, Corporates &amp; Global Partners</h3>
+<p class="text-gray-700 text-lg leading-relaxed mb-6">We manage Kenya as a destination for organizations, associations, and partners looking to host meetings, incentives, conferences, exhibitions, events, delegations, and special interest programs.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 min-w-[1.25rem] bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-full flex items-center justify-center mt-0.5">
+<span class="text-white text-xs font-bold">✓</span>
+</div>
+<span class="text-gray-700">Meetings, Incentives, Conferences &amp; Exhibitions (MICE)</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 min-w-[1.25rem] bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-full flex items-center justify-center mt-0.5">
+<span class="text-white text-xs font-bold">✓</span>
+</div>
+<span class="text-gray-700">Corporate retreats &amp; incentive travel</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 min-w-[1.25rem] bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-full flex items-center justify-center mt-0.5">
+<span class="text-white text-xs font-bold">✓</span>
+</div>
+<span class="text-gray-700">Team building</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 min-w-[1.25rem] bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-full flex items-center justify-center mt-0.5">
+<span class="text-white text-xs font-bold">✓</span>
+</div>
+<span class="text-gray-700">International delegations &amp; NGOs</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 min-w-[1.25rem] bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-full flex items-center justify-center mt-0.5">
+<span class="text-white text-xs font-bold">✓</span>
+</div>
+<span class="text-gray-700">Film productions &amp; special projects</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 min-w-[1.25rem] bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-full flex items-center justify-center mt-0.5">
+<span class="text-white text-xs font-bold">✓</span>
+</div>
+<span class="text-gray-700">End-to-end destination logistics</span>
+</li>
+</ul>
+<div class="inline-flex items-center gap-2 text-[#d75128] font-bold text-lg group-hover:gap-3 transition-all">
+<span>Become a Partner</span>
+<svg aria-hidden="true" class="lucide lucide-arrow-right w-5 h-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 12h14">
+</path>
+<path d="m12 5 7 7-7 7">
+</path>
+</svg>
+</div>
+</div>
+</a>
+</div>
+<div class="group">
+<a aria-label="For Experiential &amp; Adventure Travelers — Explore Kenya Differently" href="/services/tours-safaris">
+<div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 md:p-10 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-orange-100 hover:border-[#ffa119]/50 h-full">
+<div class="w-16 h-16 bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<svg aria-hidden="true" class="lucide lucide-compass w-8 h-8 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z">
+</path>
+<circle cx="12" cy="12" r="10">
+</circle>
+</svg>
+</div>
+<h3 class="text-2xl md:text-3xl font-bold text-[#2b4921] mb-4 group-hover:text-[#d75128] transition-colors">For Experiential &amp; Adventure Travelers</h3>
+<p class="text-gray-700 text-lg leading-relaxed mb-6">We curate unique journeys for travelers seeking to experience Kenya beyond the traditional safari routes — through culture, landscapes, and lesser-visited regions.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 min-w-[1.25rem] bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-full flex items-center justify-center mt-0.5">
+<span class="text-white text-xs font-bold">✓</span>
+</div>
+<span class="text-gray-700">Cultural immersion &amp; community experiences</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 min-w-[1.25rem] bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-full flex items-center justify-center mt-0.5">
+<span class="text-white text-xs font-bold">✓</span>
+</div>
+<span class="text-gray-700">Mountain climbing &amp; guided hikes</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 min-w-[1.25rem] bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-full flex items-center justify-center mt-0.5">
+<span class="text-white text-xs font-bold">✓</span>
+</div>
+<span class="text-gray-700">Remote and lesser-visited destinations</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 min-w-[1.25rem] bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-full flex items-center justify-center mt-0.5">
+<span class="text-white text-xs font-bold">✓</span>
+</div>
+<span class="text-gray-700">Custom private safaris with purpose</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 min-w-[1.25rem] bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-full flex items-center justify-center mt-0.5">
+<span class="text-white text-xs font-bold">✓</span>
+</div>
+<span class="text-gray-700">Authentic, meaningful travel experiences</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 min-w-[1.25rem] bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-full flex items-center justify-center mt-0.5">
+<span class="text-white text-xs font-bold">✓</span>
+</div>
+<span class="text-gray-700">Destination weddings</span>
+</li>
+</ul>
+<div class="inline-flex items-center gap-2 text-[#d75128] font-bold text-lg group-hover:gap-3 transition-all">
+<span>Explore Kenya Differently</span>
+<svg aria-hidden="true" class="lucide lucide-arrow-right w-5 h-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 12h14">
+</path>
+<path d="m12 5 7 7-7 7">
+</path>
+</svg>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-20 bg-gradient-to-b from-gray-50 to-white">
+<div class="container mx-auto px-4 md:px-8 lg:px-12">
+<div>
+<div class="text-center mb-12 md:mb-16">
+<span class="inline-block px-5 py-2 bg-gradient-to-r from-[#d75128] to-[#ffa119] text-white text-sm font-bold rounded-full shadow-lg mb-4">Our Expertise</span>
+<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#2b4921] mb-4">What We Specialize In</h2>
+<div class="w-24 h-1 bg-gradient-to-r from-[#d75128] to-[#ffa119] mx-auto rounded-full">
+</div>
+</div>
+<div class="mb-16 md:mb-20">
+<div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-7xl mx-auto">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl order-last lg:order-first">
+<img alt="MICE &amp; Business Travel Management - Conferences, Incentives, Corporate Events in Kenya" class="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover" data-nimg="1" decoding="async" height="600" loading="lazy" sizes="(max-width: 1024px) 100vw, 50vw" src="{% static 'site_mirror/_next/image/images/conferences-hero.png' %}" srcset="/static/site_mirror/_next/image/images/conferences-hero.png 384w, /static/site_mirror/_next/image/images/conferences-hero.png 640w, /static/site_mirror/_next/image/images/conferences-hero.png 750w, /static/site_mirror/_next/image/images/conferences-hero.png 828w, /static/site_mirror/_next/image/images/conferences-hero.png 1080w, /static/site_mirror/_next/image/images/conferences-hero.png 1200w, /static/site_mirror/_next/image/images/conferences-hero.png 1920w, /static/site_mirror/_next/image/images/conferences-hero.png 2048w, /static/site_mirror/_next/image/images/conferences-hero.png 3840w" style="color:transparent" width="800"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
+</div>
+<div class="absolute bottom-6 left-6 right-6">
+<div class="text-white">
+<div class="text-sm font-semibold mb-1">Specialty Area</div>
+<div class="text-2xl font-bold">Professional Event Management</div>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<div>
+<h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-[#2b4921] mb-4">MICE &amp; Business Travel Management</h3>
+<p class="text-gray-700 text-lg leading-relaxed mb-4">We design, manage, and deliver professional meetings, incentives, conferences, events, and business travel experiences across Kenya.</p>
+<p class="text-gray-700 text-base leading-relaxed mb-4">As a destination management company, Come Travel Kenya supports organizations with venue sourcing, accommodation, transport, delegate logistics, curated experiences, and on-ground coordination — allowing our clients to focus on objectives, engagement, and outcomes while we handle execution.</p>
+<p class="text-gray-700 text-base leading-relaxed">From executive retreats and incentive programs to large conferences, delegations, and private events, our approach blends professional delivery with authentic Kenyan experiences.</p>
+</div>
+<div>
+<h4 class="text-lg font-bold text-[#2b4921] mb-4">What We Do</h4>
+<div class="grid sm:grid-cols-2 gap-3">
+<div class="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm border border-gray-100">
+<div class="w-10 h-10 min-w-[2.5rem] bg-gradient-to-br from-[#2b4921] to-[#2b4921] rounded-lg flex items-center justify-center">
+<svg aria-hidden="true" class="lucide lucide-calendar w-5 h-5 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 2v4">
+</path>
+<path d="M16 2v4">
+</path>
+<rect height="18" rx="2" width="18" x="3" y="4">
+</rect>
+<path d="M3 10h18">
+</path>
+</svg>
+</div>
+<span class="text-sm font-medium text-gray-700">Conferences &amp; summits</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm border border-gray-100">
+<div class="w-10 h-10 min-w-[2.5rem] bg-gradient-to-br from-[#2b4921] to-[#2b4921] rounded-lg flex items-center justify-center">
+<svg aria-hidden="true" class="lucide lucide-rocket w-5 h-5 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
+</path>
+<path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+</path>
+<path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0">
+</path>
+<path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5">
+</path>
+</svg>
+</div>
+<span class="text-sm font-medium text-gray-700">Incentive programs</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm border border-gray-100">
+<div class="w-10 h-10 min-w-[2.5rem] bg-gradient-to-br from-[#2b4921] to-[#2b4921] rounded-lg flex items-center justify-center">
+<svg aria-hidden="true" class="lucide lucide-briefcase w-5 h-5 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16">
+</path>
+<rect height="14" rx="2" width="20" x="2" y="6">
+</rect>
+</svg>
+</div>
+<span class="text-sm font-medium text-gray-700">Corporate retreats &amp; executive offsites</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm border border-gray-100">
+<div class="w-10 h-10 min-w-[2.5rem] bg-gradient-to-br from-[#2b4921] to-[#2b4921] rounded-lg flex items-center justify-center">
+<svg aria-hidden="true" class="lucide lucide-building2 lucide-building-2 w-5 h-5 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 12h4">
+</path>
+<path d="M10 8h4">
+</path>
+<path d="M14 21v-3a2 2 0 0 0-4 0v3">
+</path>
+<path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2">
+</path>
+<path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16">
+</path>
+</svg>
+</div>
+<span class="text-sm font-medium text-gray-700">Product launches &amp; brand activations</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm border border-gray-100">
+<div class="w-10 h-10 min-w-[2.5rem] bg-gradient-to-br from-[#2b4921] to-[#2b4921] rounded-lg flex items-center justify-center">
+<svg aria-hidden="true" class="lucide lucide-heart w-5 h-5 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5">
+</path>
+</svg>
+</div>
+<span class="text-sm font-medium text-gray-700">Destination weddings &amp; private events</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm border border-gray-100">
+<div class="w-10 h-10 min-w-[2.5rem] bg-gradient-to-br from-[#2b4921] to-[#2b4921] rounded-lg flex items-center justify-center">
+<svg aria-hidden="true" class="lucide lucide-users w-5 h-5 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
+</path>
+<path d="M16 3.128a4 4 0 0 1 0 7.744">
+</path>
+<path d="M22 21v-2a4 4 0 0 0-3-3.87">
+</path>
+<circle cx="9" cy="7" r="4">
+</circle>
+</svg>
+</div>
+<span class="text-sm font-medium text-gray-700">Delegations &amp; institutional travel</span>
+</div>
+</div>
+</div>
+<div tabindex="0">
+<a class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#d75128] to-[#ffa119] text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-all" href="/services/mice">Explore Our MICE &amp; Events Solutions<svg aria-hidden="true" class="lucide lucide-arrow-right w-5 h-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 12h14">
+</path>
+<path d="m12 5 7 7-7 7">
+</path>
+</svg>
+</a>
+</div>
+<p class="text-sm text-gray-600">Specialising in <a class="text-[#d75128] font-semibold hover:underline" href="/services/mice/incentive-travel">incentive travel Kenya</a> programmes — reward your top performers with unforgettable Kenyan experiences.</p>
+</div>
+</div>
+</div>
+<div>
+<div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-7xl mx-auto">
+<div class="space-y-6">
+<div>
+<h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-[#2b4921] mb-4">Experiential &amp; Unique Safari Journeys</h3>
+<p class="text-gray-700 text-lg leading-relaxed mb-4">Our safari experiences go beyond the usual. We specialize in cultural encounters, mountain climbing, guided hikes, and travel into lesser-known regions of Kenya — designed for travelers who value authenticity, depth, and discovery over crowds.</p>
+</div>
+<div>
+<h4 class="text-lg font-bold text-[#2b4921] mb-4">What We Offer</h4>
+<div class="grid sm:grid-cols-2 gap-3">
+<div class="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm border border-gray-100">
+<div class="w-10 h-10 min-w-[2.5rem] bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-lg flex items-center justify-center">
+<svg aria-hidden="true" class="lucide lucide-globe w-5 h-5 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10">
+</circle>
+<path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20">
+</path>
+<path d="M2 12h20">
+</path>
+</svg>
+</div>
+<span class="text-sm font-medium text-gray-700">Cultural &amp; heritage journeys</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm border border-gray-100">
+<div class="w-10 h-10 min-w-[2.5rem] bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-lg flex items-center justify-center">
+<svg aria-hidden="true" class="lucide lucide-mountain w-5 h-5 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="m8 3 4 8 5-5 5 15H2L8 3z">
+</path>
+</svg>
+</div>
+<span class="text-sm font-medium text-gray-700">Mountain climbing &amp; hiking</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm border border-gray-100">
+<div class="w-10 h-10 min-w-[2.5rem] bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-lg flex items-center justify-center">
+<svg aria-hidden="true" class="lucide lucide-compass w-5 h-5 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z">
+</path>
+<circle cx="12" cy="12" r="10">
+</circle>
+</svg>
+</div>
+<span class="text-sm font-medium text-gray-700">Remote landscapes &amp; communities</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm border border-gray-100">
+<div class="w-10 h-10 min-w-[2.5rem] bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-lg flex items-center justify-center">
+<svg aria-hidden="true" class="lucide lucide-heart w-5 h-5 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5">
+</path>
+</svg>
+</div>
+<span class="text-sm font-medium text-gray-700">Bespoke private safaris</span>
+</div>
+</div>
+</div>
+<div class="bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl p-6 border border-orange-100">
+<p class="text-gray-700 leading-relaxed">From bush &amp; beach journeys and Rift Valley lakes experiences to honeymoon escapes and remote adventures, each journey is custom-designed to match your goals and travel style.</p>
+</div>
+<div tabindex="0">
+<a class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#d75128] to-[#ffa119] text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-all" href="/services/tours-safaris">Discover Experiential Safaris<svg aria-hidden="true" class="lucide lucide-arrow-right w-5 h-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 12h14">
+</path>
+<path d="m12 5 7 7-7 7">
+</path>
+</svg>
+</a>
+</div>
+</div>
+<div class="relative rounded-2xl overflow-hidden shadow-2xl">
+<img alt="Experiential Safari Journeys - Cultural Encounters, Mountain Climbing, Authentic Kenya Experiences" class="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover" data-nimg="1" decoding="async" height="600" loading="lazy" sizes="(max-width: 1024px) 100vw, 50vw" src="{% static 'site_mirror/_next/image/images/maasai-mara.png' %}" srcset="/static/site_mirror/_next/image/images/maasai-mara.png 384w, /static/site_mirror/_next/image/images/maasai-mara.png 640w, /static/site_mirror/_next/image/images/maasai-mara.png 750w, /static/site_mirror/_next/image/images/maasai-mara.png 828w, /static/site_mirror/_next/image/images/maasai-mara.png 1080w, /static/site_mirror/_next/image/images/maasai-mara.png 1200w, /static/site_mirror/_next/image/images/maasai-mara.png 1920w, /static/site_mirror/_next/image/images/maasai-mara.png 2048w, /static/site_mirror/_next/image/images/maasai-mara.png 3840w" style="color:transparent" width="800"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
+</div>
+<div class="absolute bottom-6 left-6 right-6">
+<div class="text-white">
+<div class="text-sm font-semibold mb-1">Specialty Area</div>
+<div class="text-2xl font-bold">Beyond Traditional Safaris</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-20 bg-[#2b4921]">
+<div class="container mx-auto px-4 md:px-8 lg:px-12">
+<div>
+<div class="text-center mb-12 md:mb-16 max-w-4xl mx-auto">
+<span class="inline-block px-5 py-2 bg-gradient-to-r from-[#d75128] to-[#ffa119] text-white text-sm font-bold rounded-full shadow-lg mb-4">Behind the Scenes</span>
+<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">Seamless Travel &amp; Logistics Support</h2>
+<div class="w-24 h-1 bg-gradient-to-r from-[#d75128] to-[#ffa119] mx-auto mb-6 rounded-full">
+</div>
+<p class="text-xl text-gray-200 leading-relaxed">Behind every successful program or journey is flawless logistics. We provide full on-ground support to ensure smooth movement, compliance, and peace of mind.</p>
+</div>
+<div class="grid lg:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto">
+<div>
+<div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg border border-gray-100 h-full">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-14 h-14 bg-gradient-to-br from-[#2b4921] to-[#2b4921] rounded-xl flex items-center justify-center">
+<svg aria-hidden="true" class="lucide lucide-car w-7 h-7 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2">
+</path>
+<circle cx="7" cy="17" r="2">
+</circle>
+<path d="M9 17h6">
+</path>
+<circle cx="17" cy="17" r="2">
+</circle>
+</svg>
+</div>
+<h3 class="text-2xl md:text-3xl font-bold text-[#2b4921]">Transport &amp; Movement</h3>
+</div>
+<p class="text-gray-700 leading-relaxed mb-6">Professional transport solutions for every type of journey across Kenya — from airport transfers to multi-day safari logistics.</p>
+<div class="space-y-4 mb-8">
+<div class="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm border border-gray-100">
+<div class="w-10 h-10 min-w-[2.5rem] bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-lg flex items-center justify-center mt-0.5">
+<svg aria-hidden="true" class="lucide lucide-plane w-5 h-5 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z">
+</path>
+</svg>
+</div>
+<div>
+<h4 class="font-bold text-[#2b4921] mb-1">Domestic flights &amp; air charters</h4>
+<p class="text-sm text-gray-600">Scheduled and charter flight coordination across Kenya</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm border border-gray-100">
+<div class="w-10 h-10 min-w-[2.5rem] bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-lg flex items-center justify-center mt-0.5">
+<svg aria-hidden="true" class="lucide lucide-car w-5 h-5 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2">
+</path>
+<circle cx="7" cy="17" r="2">
+</circle>
+<path d="M9 17h6">
+</path>
+<circle cx="17" cy="17" r="2">
+</circle>
+</svg>
+</div>
+<div>
+<h4 class="font-bold text-[#2b4921] mb-1">Road transport &amp; 4x4 vehicles</h4>
+<p class="text-sm text-gray-600">Modern fleet for safari, transfers, and group movements</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm border border-gray-100">
+<div class="w-10 h-10 min-w-[2.5rem] bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-lg flex items-center justify-center mt-0.5">
+<svg aria-hidden="true" class="lucide lucide-tram-front w-5 h-5 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<rect height="16" rx="2" width="16" x="4" y="3">
+</rect>
+<path d="M4 11h16">
+</path>
+<path d="M12 3v8">
+</path>
+<path d="m8 19-2 3">
+</path>
+<path d="m18 22-2-3">
+</path>
+<path d="M8 15h.01">
+</path>
+<path d="M16 15h.01">
+</path>
+</svg>
+</div>
+<div>
+<h4 class="font-bold text-[#2b4921] mb-1">SGR &amp; rail logistics</h4>
+<p class="text-sm text-gray-600">Standard Gauge Railway bookings and coordination</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm border border-gray-100">
+<div class="w-10 h-10 min-w-[2.5rem] bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-lg flex items-center justify-center mt-0.5">
+<svg aria-hidden="true" class="lucide lucide-users w-5 h-5 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
+</path>
+<path d="M16 3.128a4 4 0 0 1 0 7.744">
+</path>
+<path d="M22 21v-2a4 4 0 0 0-3-3.87">
+</path>
+<circle cx="9" cy="7" r="4">
+</circle>
+</svg>
+</div>
+<div>
+<h4 class="font-bold text-[#2b4921] mb-1">Group and VIP movement coordination</h4>
+<p class="text-sm text-gray-600">Executive transfers and large group logistics</p>
+</div>
+</div>
+</div>
+<a class="inline-flex items-center gap-2 text-[#d75128] font-bold hover:gap-3 transition-all" href="/services/support-services/ground-transport-logistics">
+<span>View Transport Services</span>
+<svg aria-hidden="true" class="lucide lucide-arrow-right w-5 h-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 12h14">
+</path>
+<path d="m12 5 7 7-7 7">
+</path>
+</svg>
+</a>
+</div>
+</div>
+<div>
+<div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 shadow-lg border border-orange-100 h-full">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-14 h-14 bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-xl flex items-center justify-center">
+<svg aria-hidden="true" class="lucide lucide-file-text w-7 h-7 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z">
+</path>
+<path d="M14 2v4a2 2 0 0 0 2 2h4">
+</path>
+<path d="M10 9H8">
+</path>
+<path d="M16 13H8">
+</path>
+<path d="M16 17H8">
+</path>
+</svg>
+</div>
+<h3 class="text-2xl md:text-3xl font-bold text-[#2b4921]">Travel Documents &amp; Immigration Support</h3>
+</div>
+<p class="text-gray-700 leading-relaxed mb-6">Comprehensive immigration and documentation assistance to ensure smooth entry, compliance, and peace of mind for all travelers.</p>
+<div class="space-y-4 mb-8">
+<div class="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm border border-orange-100">
+<div class="w-10 h-10 min-w-[2.5rem] bg-gradient-to-br from-[#2b4921] to-[#2b4921] rounded-lg flex items-center justify-center mt-0.5">
+<svg aria-hidden="true" class="lucide lucide-file-text w-5 h-5 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z">
+</path>
+<path d="M14 2v4a2 2 0 0 0 2 2h4">
+</path>
+<path d="M10 9H8">
+</path>
+<path d="M16 13H8">
+</path>
+<path d="M16 17H8">
+</path>
+</svg>
+</div>
+<div>
+<h4 class="font-bold text-[#2b4921] mb-1">Kenya Electronic Travel Authorizations (ETA)</h4>
+<p class="text-sm text-gray-600">Fast-track ETA processing for visitors</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm border border-orange-100">
+<div class="w-10 h-10 min-w-[2.5rem] bg-gradient-to-br from-[#2b4921] to-[#2b4921] rounded-lg flex items-center justify-center mt-0.5">
+<svg aria-hidden="true" class="lucide lucide-shield w-5 h-5 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+</path>
+</svg>
+</div>
+<div>
+<h4 class="font-bold text-[#2b4921] mb-1">Work permits &amp; residence permits</h4>
+<p class="text-sm text-gray-600">Support for long-term stays and employment</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm border border-orange-100">
+<div class="w-10 h-10 min-w-[2.5rem] bg-gradient-to-br from-[#2b4921] to-[#2b4921] rounded-lg flex items-center justify-center mt-0.5">
+<svg aria-hidden="true" class="lucide lucide-clock w-5 h-5 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6v6l4 2">
+</path>
+<circle cx="12" cy="12" r="10">
+</circle>
+</svg>
+</div>
+<div>
+<h4 class="font-bold text-[#2b4921] mb-1">Immigration advisory for delegations</h4>
+<p class="text-sm text-gray-600">Compliance guidance for groups and long stays</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm border border-orange-100">
+<div class="w-10 h-10 min-w-[2.5rem] bg-gradient-to-br from-[#2b4921] to-[#2b4921] rounded-lg flex items-center justify-center mt-0.5">
+<svg aria-hidden="true" class="lucide lucide-circle-check-big w-5 h-5 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.801 10A10 10 0 1 1 17 3.335">
+</path>
+<path d="m9 11 3 3L22 4">
+</path>
+</svg>
+</div>
+<div>
+<h4 class="font-bold text-[#2b4921] mb-1">Travel insurance</h4>
+<p class="text-sm text-gray-600">Comprehensive coverage arrangements</p>
+</div>
+</div>
+</div>
+<a class="inline-flex items-center gap-2 text-[#d75128] font-bold hover:gap-3 transition-all" href="/services/immigration-services">
+<span>View Immigration Services</span>
+<svg aria-hidden="true" class="lucide lucide-arrow-right w-5 h-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 12h14">
+</path>
+<path d="m12 5 7 7-7 7">
+</path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<p class="text-gray-200 mb-6 text-lg">Need logistics support for your Kenya program or journey?</p>
+<a class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#d75128] to-[#ffa119] text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-all" href="/contact">Get Logistics Support<svg aria-hidden="true" class="lucide lucide-arrow-right w-5 h-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 12h14">
+</path>
+<path d="m12 5 7 7-7 7">
+</path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-20 bg-gradient-to-b from-gray-50 to-white">
+<div class="container mx-auto px-4 md:px-8 lg:px-12">
+<div class="text-center mb-12 md:mb-16">
+<span class="inline-block px-5 py-2 bg-gradient-to-r from-[#d75128] to-[#ffa119] text-white text-sm font-bold rounded-full shadow-lg mb-4">Our Promise</span>
+<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#2b4921] mb-4">Why Work With Come Travel Kenya</h2>
+<div class="w-24 h-1 bg-gradient-to-r from-[#d75128] to-[#ffa119] mx-auto rounded-full">
+</div>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mb-12">
+<div class="group">
+<div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 h-full">
+<div class="w-12 h-12 bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<svg aria-hidden="true" class="lucide lucide-map-pin w-6 h-6 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+</path>
+<circle cx="12" cy="10" r="3">
+</circle>
+</svg>
+</div>
+<h3 class="text-lg font-bold text-[#2b4921] mb-3 group-hover:text-[#d75128] transition-colors">Kenya-based Destination Management Company</h3>
+<p class="text-gray-600 text-sm leading-relaxed">Local expertise with deep understanding of Kenya's landscapes, culture, and logistics infrastructure</p>
+</div>
+</div>
+<div class="group">
+<div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 h-full">
+<div class="w-12 h-12 bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<svg aria-hidden="true" class="lucide lucide-network w-6 h-6 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<rect height="6" rx="1" width="6" x="16" y="16">
+</rect>
+<rect height="6" rx="1" width="6" x="2" y="16">
+</rect>
+<rect height="6" rx="1" width="6" x="9" y="2">
+</rect>
+<path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3">
+</path>
+<path d="M12 12V8">
+</path>
+</svg>
+</div>
+<h3 class="text-lg font-bold text-[#2b4921] mb-3 group-hover:text-[#d75128] transition-colors">Deep local knowledge &amp; trusted supplier network</h3>
+<p class="text-gray-600 text-sm leading-relaxed">Established relationships with hotels, venues, guides, and service providers across all 47 counties</p>
+</div>
+</div>
+<div class="group">
+<div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 h-full">
+<div class="w-12 h-12 bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<svg aria-hidden="true" class="lucide lucide-award w-6 h-6 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
+</path>
+<circle cx="12" cy="8" r="6">
+</circle>
+</svg>
+</div>
+<h3 class="text-lg font-bold text-[#2b4921] mb-3 group-hover:text-[#d75128] transition-colors">Proven experience handling complex programs</h3>
+<p class="text-gray-600 text-sm leading-relaxed">Successfully managed everything from intimate groups to 500+ delegate conferences with flawless execution</p>
+</div>
+</div>
+<div class="group">
+<div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 h-full">
+<div class="w-12 h-12 bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<svg aria-hidden="true" class="lucide lucide-users w-6 h-6 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
+</path>
+<path d="M16 3.128a4 4 0 0 1 0 7.744">
+</path>
+<path d="M22 21v-2a4 4 0 0 0-3-3.87">
+</path>
+<circle cx="9" cy="7" r="4">
+</circle>
+</svg>
+</div>
+<h3 class="text-lg font-bold text-[#2b4921] mb-3 group-hover:text-[#d75128] transition-colors">Personalized, hands-on project management</h3>
+<p class="text-gray-600 text-sm leading-relaxed">Dedicated account managers who understand your objectives and ensure every detail is handled with care</p>
+</div>
+</div>
+<div class="group">
+<div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 h-full">
+<div class="w-12 h-12 bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<svg aria-hidden="true" class="lucide lucide-heart w-6 h-6 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5">
+</path>
+</svg>
+</div>
+<h3 class="text-lg font-bold text-[#2b4921] mb-3 group-hover:text-[#d75128] transition-colors">Ethical, culturally respectful, and sustainable travel approach</h3>
+<p class="text-gray-600 text-sm leading-relaxed">Committed to responsible tourism that benefits local communities and preserves Kenya's natural heritage</p>
+</div>
+</div>
+</div>
+<div class="bg-gradient-to-r from-[#2b4921] to-[#2b4921] rounded-2xl p-8 md:p-12 text-center text-white max-w-4xl mx-auto mb-16">
+<div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
+<svg aria-hidden="true" class="lucide lucide-circle-check-big w-8 h-8 text-[#ffa119]" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.801 10A10 10 0 1 1 17 3.335">
+</path>
+<path d="m9 11 3 3L22 4">
+</path>
+</svg>
+</div>
+<h3 class="text-2xl md:text-3xl font-bold mb-4">We don't sell packages. We manage experiences - professionally and responsibly.</h3>
+<p class="text-lg text-white/90 leading-relaxed">Every program and journey is thoughtfully designed, expertly coordinated, and delivered with integrity and care.</p>
+</div>
+<div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+<div class="relative group">
+<div class="bg-white rounded-2xl p-5 md:p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300">
+<div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<svg aria-hidden="true" class="lucide lucide-award w-6 h-6 md:w-7 md:h-7 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
+</path>
+<circle cx="12" cy="8" r="6">
+</circle>
+</svg>
+</div>
+<div class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#2b4921] mb-2">5<!-- -->+</div>
+<h4 class="text-sm md:text-base lg:text-lg font-bold text-gray-800 mb-1">Years of Excellence</h4>
+<p class="text-xs md:text-sm text-gray-600 leading-relaxed">Delivering trusted travel solutions since 2019</p>
+<div class="absolute bottom-B0 left-0 h-1 bg-gradient-to-r from-[#d75128] to-[#ffa119] w-0 group-hover:w-full transition-all duration-500 rounded-b-2xl">
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="bg-white rounded-2xl p-5 md:p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300">
+<div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#2b4921] to-[#2b4921] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<svg aria-hidden="true" class="lucide lucide-map-pin w-6 h-6 md:w-7 md:h-7 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+</path>
+<circle cx="12" cy="10" r="3">
+</circle>
+</svg>
+</div>
+<div class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#2b4921] mb-2">47</div>
+<h4 class="text-sm md:text-base lg:text-lg font-bold text-gray-800 mb-1">Destinations</h4>
+<p class="text-xs md:text-sm text-gray-600 leading-relaxed">Covering all Kenyan counties and key attractions</p>
+<div class="absolute bottom-B0 left-0 h-1 bg-gradient-to-r from-[#2b4921] to-[#2b4921] w-0 group-hover:w-full transition-all duration-500 rounded-b-2xl">
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="bg-white rounded-2xl p-5 md:p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300">
+<div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<svg aria-hidden="true" class="lucide lucide-users w-6 h-6 md:w-7 md:h-7 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
+</path>
+<path d="M16 3.128a4 4 0 0 1 0 7.744">
+</path>
+<path d="M22 21v-2a4 4 0 0 0-3-3.87">
+</path>
+<circle cx="9" cy="7" r="4">
+</circle>
+</svg>
+</div>
+<div class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#2b4921] mb-2">1,000<!-- -->+</div>
+<h4 class="text-sm md:text-base lg:text-lg font-bold text-gray-800 mb-1">Happy Clients</h4>
+<p class="text-xs md:text-sm text-gray-600 leading-relaxed">Serving travelers and organizations worldwide</p>
+<div class="absolute bottom-B0 left-0 h-1 bg-gradient-to-r from-[#d75128] to-[#ffa119] w-0 group-hover:w-full transition-all duration-500 rounded-b-2xl">
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="bg-white rounded-2xl p-5 md:p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300">
+<div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#2b4921] to-[#2b4921] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<svg aria-hidden="true" class="lucide lucide-trending-up w-6 h-6 md:w-7 md:h-7 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 7h6v6">
+</path>
+<path d="m22 7-8.5 8.5-5-5L2 17">
+</path>
+</svg>
+</div>
+<div class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#2b4921] mb-2">98<!-- -->%</div>
+<h4 class="text-sm md:text-base lg:text-lg font-bold text-gray-800 mb-1">Success Rate</h4>
+<p class="text-xs md:text-sm text-gray-600 leading-relaxed">Consistent excellence in service delivery</p>
+<div class="absolute bottom-B0 left-0 h-1 bg-gradient-to-r from-[#2b4921] to-[#2b4921] w-0 group-hover:w-full transition-all duration-500 rounded-b-2xl">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<meta content="Rosslyn Riviera Mall, Limuru Road, Nairobi, Kenya" itemprop="address"/>
+<meta content="+254711082254" itemprop="telephone"/>
+<meta content="safaris@cometravelkenya.com" itemprop="email"/>
+<meta content="https://cometravelkenya.com" itemprop="url"/>
+</section>
+<section class="jsx-f8a1f7979997261d py-8 md:py-12 lg:py-14 bg-[#2b4921]">
+<div class="jsx-f8a1f7979997261d container mx-auto px-4 md:px-8 lg:px-12">
+<div class="text-center mb-16 md:mb-20">
+<div class="inline-block mb-6">
+<span class="jsx-f8a1f7979997261d px-6 py-3 bg-gradient-to-r from-[#d75128] to-[#ffa119] text-white text-sm md:text-base font-semibold rounded-full shadow-xl">Our Network</span>
+</div>
+<h2 class="jsx-f8a1f7979997261d text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6">Affiliations &amp; Partnerships</h2>
+<div class="jsx-f8a1f7979997261d w-32 h-1.5 bg-gradient-to-r from-[#d75128] to-[#ffa119] mx-auto mb-8 rounded-full shadow-lg">
+</div>
+<p class="jsx-f8a1f7979997261d text-lg md:text-xl lg:text-2xl text-gray-200 max-w-4xl mx-auto px-4 leading-relaxed">Building connections through professional memberships, community service, and industry partnerships</p>
+</div>
+<div class="relative max-w-7xl mx-auto">
+<div class="jsx-f8a1f7979997261d grid gap-6 md:gap-8 lg:gap-10 grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto">
+<div class="group">
+<div class="jsx-f8a1f7979997261d bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 h-full">
+<div class="jsx-f8a1f7979997261d relative h-56 md:h-64 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
+<div class="jsx-f8a1f7979997261d absolute inset-0 flex items-center justify-center p-8">
+<img alt="Tour Operators Society of Kenya logo" class="jsx-f8a1f7979997261d w-full h-full object-contain drop-shadow-lg group-hover:scale-110 transition-transform duration-500" src="{% static 'site_mirror/images/affiliations/tosk-sticker.png' %}"/>
+</div>
+<div class="jsx-f8a1f7979997261d absolute top-4 right-4 w-12 h-12 bg-gradient-to-br from-[#d75128] to-[#ffa119] rounded-xl flex items-center justify-center shadow-lg">
+<svg aria-hidden="true" class="lucide lucide-briefcase jsx-f8a1f7979997261d w-6 h-6 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16">
+</path>
+<rect height="14" rx="2" width="20" x="2" y="6">
+</rect>
+</svg>
+</div>
+<div class="jsx-f8a1f7979997261d absolute bottom-4 left-4">
+<span class="jsx-f8a1f7979997261d inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#d75128] to-[#ffa119] text-white text-xs md:text-sm font-bold rounded-full shadow-md">
+<svg aria-hidden="true" class="lucide lucide-shield w-4 h-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+</path>
+</svg>Active Member</span>
+</div>
+</div>
+<div class="jsx-f8a1f7979997261d p-6 md:p-8">
+<div class="jsx-f8a1f7979997261d flex items-start justify-between mb-4">
+<h3 class="jsx-f8a1f7979997261d text-xl md:text-2xl lg:text-3xl font-bold text-[#2b4921] group-hover:text-[#d75128] transition-colors duration-300 leading-tight">Tour Operators Society of Kenya</h3>
+</div>
+<div class="jsx-f8a1f7979997261d inline-flex items-center gap-2 px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-600 font-semibold mb-4">
+<svg aria-hidden="true" class="lucide lucide-award w-4 h-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
+</path>
+<circle cx="12" cy="8" r="6">
+</circle>
+</svg>Since 2025</div>
+<p class="jsx-f8a1f7979997261d text-gray-600 mb-6 text-sm md:text-base leading-relaxed">Proud member of TOSK, committed to upholding the highest standards in tour operations and sustainable tourism practices across Kenya.</p>
+</div>
+<div class="jsx-f8a1f7979997261d h-1 w-0 group-hover:w-full bg-gradient-to-r from-[#d75128] to-[#ffa119] transition-all duration-700 ease-out">
+</div>
+</div>
+</div>
+<div class="group">
+<div class="jsx-f8a1f7979997261d bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 h-full">
+<div class="jsx-f8a1f7979997261d relative h-56 md:h-64 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
+<div class="jsx-f8a1f7979997261d absolute inset-0 flex items-center justify-center p-8">
+<img alt="Y's Men International Kenya logo" class="jsx-f8a1f7979997261d w-full h-full object-contain drop-shadow-lg group-hover:scale-110 transition-transform duration-500" src="{% static 'site_mirror/images/affiliations/ysmen-kenya-district.webp' %}"/>
+</div>
+<div class="jsx-f8a1f7979997261d absolute top-4 right-4 w-12 h-12 bg-gradient-to-br from-[#2b4921] to-[#2b4921] rounded-xl flex items-center justify-center shadow-lg">
+<svg aria-hidden="true" class="lucide lucide-heart jsx-f8a1f7979997261d w-6 h-6 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5">
+</path>
+</svg>
+</div>
+<div class="jsx-f8a1f7979997261d absolute bottom-4 left-4">
+<span class="jsx-f8a1f7979997261d inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#2b4921] to-[#2b4921] text-white text-xs md:text-sm font-bold rounded-full shadow-md">
+<svg aria-hidden="true" class="lucide lucide-shield w-4 h-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+</path>
+</svg>Community Volunteer</span>
+</div>
+</div>
+<div class="jsx-f8a1f7979997261d p-6 md:p-8">
+<div class="jsx-f8a1f7979997261d flex items-start justify-between mb-4">
+<h3 class="jsx-f8a1f7979997261d text-xl md:text-2xl lg:text-3xl font-bold text-[#2b4921] group-hover:text-[#d75128] transition-colors duration-300 leading-tight">Y's Men International Kenya</h3>
+</div>
+<div class="jsx-f8a1f7979997261d inline-flex items-center gap-2 px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-600 font-semibold mb-4">
+<svg aria-hidden="true" class="lucide lucide-award w-4 h-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
+</path>
+<circle cx="12" cy="8" r="6">
+</circle>
+</svg>Since 2019</div>
+<p class="jsx-f8a1f7979997261d text-gray-600 mb-6 text-sm md:text-base leading-relaxed">Actively engaged in community service initiatives through Y's Men International, supporting youth development and social welfare programs.</p>
+</div>
+<div class="jsx-f8a1f7979997261d h-1 w-0 group-hover:w-full bg-gradient-to-r from-[#2b4921] to-[#2b4921] transition-all duration-700 ease-out">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-16 md:mt-20">
+<div class="jsx-f8a1f7979997261d inline-flex flex-wrap items-center justify-center gap-3 md:gap-4 px-8 py-4 bg-white rounded-full shadow-xl border-2 border-gray-100">
+<svg aria-hidden="true" class="lucide lucide-users w-6 h-6 text-[#d75128]" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
+</path>
+<path d="M16 3.128a4 4 0 0 1 0 7.744">
+</path>
+<path d="M22 21v-2a4 4 0 0 0-3-3.87">
+</path>
+<circle cx="9" cy="7" r="4">
+</circle>
+</svg>
+<span class="jsx-f8a1f7979997261d text-sm md:text-base lg:text-lg font-bold text-[#2b4921]">Committed to Professional Excellence &amp; Community Service</span>
+<svg aria-hidden="true" class="lucide lucide-heart w-6 h-6 text-[#2b4921]" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5">
+</path>
+</svg>
+</div>
+</div>
+</div>
+</section>
+<div aria-hidden="true" class="py-8 bg-gradient-to-br from-gray-50 to-white">
+</div>
+<!--/$-->
+<section class="py-16 md:py-20 bg-gradient-to-br from-[#2b4921] via-[#2b4921] to-[#2b4921] relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2">
+</div>
+<div class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl translate-x-1/2 translate-y-1/2">
+</div>
+</div>
+<div class="container mx-auto px-4 md:px-8 lg:px-12 relative z-10">
+<div class="text-center max-w-4xl mx-auto">
+<div class="inline-block mb-6">
+<span class="px-5 py-2 bg-gradient-to-r from-[#d75128] to-[#ffa119] text-white text-sm font-bold rounded-full shadow-lg">Ready to Start?</span>
+</div>
+<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">Let's Plan Your Kenya Experience</h2>
+<div class="w-24 h-1 bg-gradient-to-r from-[#d75128] to-[#ffa119] mx-auto mb-8 rounded-full">
+</div>
+<p class="text-xl text-white/90 leading-relaxed mb-12">Whether you are planning a conference, an incentive program, or a unique journey into Kenya — our team is ready to guide you.</p>
+<div class="flex flex-wrap justify-center gap-4 md:gap-6">
+<div tabindex="0">
+<a class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#d75128] to-[#ffa119] text-white font-bold rounded-lg shadow-2xl hover:shadow-3xl transition-all text-base md:text-lg" href="/contact">
+<svg aria-hidden="true" class="lucide lucide-calendar w-6 h-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 2v4">
+</path>
+<path d="M16 2v4">
+</path>
+<rect height="18" rx="2" width="18" x="3" y="4">
+</rect>
+<path d="M3 10h18">
+</path>
+</svg>
+<span>Plan a Program / Event</span>
+<svg aria-hidden="true" class="lucide lucide-arrow-right w-5 h-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 12h14">
+</path>
+<path d="m12 5 7 7-7 7">
+</path>
+</svg>
+</a>
+</div>
+<div tabindex="0">
+<a class="inline-flex items-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-md text-white font-bold rounded-lg border-2 border-white/30 hover:bg-white/20 transition-all text-base md:text-lg" href="/contact">
+<svg aria-hidden="true" class="lucide lucide-compass w-6 h-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z">
+</path>
+<circle cx="12" cy="12" r="10">
+</circle>
+</svg>
+<span>Design a Custom Journey</span>
+<svg aria-hidden="true" class="lucide lucide-arrow-right w-5 h-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 12h14">
+</path>
+<path d="m12 5 7 7-7 7">
+</path>
+</svg>
+</a>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-white/20">
+<p class="text-white/80 text-sm mb-4">Prefer to speak with us directly?</p>
+<div class="flex flex-wrap justify-center items-center gap-6 text-white">
+<a class="hover:text-[#ffa119] transition-colors font-semibold" href="tel:+254711082254">📞 +254 711 082 254</a>
+<span class="text-white/40">|</span>
+<a class="hover:text-[#ffa119] transition-colors font-semibold" href="/cdn-cgi/l/email-protection#681b090e091a011b280b07050d1c1a091e0d04030d061109460b0705">✉️ <span class="__cf_email__" data-cfemail="6714060106150e142704080a0213150611020b0c02091e064904080a">[email protected]</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!--/$-->
+</div>
+<script>(self.__next_f=self.__next_f||[]).push([0])</script>
+{% endblock %}
