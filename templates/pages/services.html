@@ -2,242 +2,112 @@
 {% load static %}
 
 {% block page_head %}
-  <title>Kenya DMC Services | Destination Management Company Kenya — MICE, Safaris &amp; More</title>
-  <meta
-    name="description"
-    content="Comprehensive travel solutions across Kenya — from corporate events to wildlife safaris, transport, flights, and immigration support."
-  />
-  <link rel="canonical" href="/services" />
+  <title>Kenya Travel Services | Multiscope Travel</title>
+  <meta name="description" content="Multiscope Travel services across Kenya: MICE, safaris, ground transport, flight logistics, travel documents, and corporate travel support." />
+  <link rel="canonical" href="/services/" />
 {% endblock %}
 
 {% block page_content %}
-<main class="bg-gray-50 text-gray-900">
-  <section class="relative overflow-hidden bg-white py-20 md:py-28">
-    <div class="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#011a1f]/10 to-transparent"></div>
-    <div class="container relative mx-auto px-4 md:px-8 lg:px-12">
-      <div class="mx-auto max-w-5xl text-center">
-        <div class="mb-5 inline-flex items-center gap-2 rounded-full bg-[#011a1f]/10 px-5 py-2 text-sm font-bold text-[#011a1f]">
-          All Services
+<main class="premium-page text-gray-900">
+  <section class="premium-hero premium-mice-hero relative overflow-hidden bg-[#011a1f] text-white">
+    <div class="absolute inset-0">
+      <img src="{% static 'site_mirror/images/mice-hero.webp' %}" alt="Multiscope Travel services" class="h-full w-full object-cover opacity-25" />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#011a1f] via-[#011a1f]/90 to-[#011a1f]/55"></div>
+    </div>
+    <div class="premium-container premium-mice-hero-inner relative">
+      <div class="premium-hero-grid premium-hero-grid-copy">
+        <div class="premium-hero-copy-wide premium-mice-hero-copy premium-reveal premium-reveal-left">
+          <p class="premium-mice-hero-pill inline-flex rounded-full bg-white/10 px-5 py-2 text-sm font-bold text-[#ffa119] ring-1 ring-white/15">All Services</p>
+          <h1 class="text-4xl font-extrabold leading-tight tracking-[-0.045em] md:text-6xl lg:text-7xl">Travel Services Built for Kenya</h1>
+          <p class="premium-mice-hero-text max-w-3xl text-lg text-white/80 md:text-xl">Corporate travel, MICE programs, safaris, logistics, and travel documentation support managed through one reliable local team.</p>
+          <div class="premium-mice-hero-actions flex flex-col sm:flex-row">
+            <a class="premium-button-primary" href="/contact">Request Quote</a>
+            <a class="premium-button-secondary" href="#mice">Explore Services</a>
+          </div>
         </div>
-        <h1 class="text-4xl font-bold text-[#011a1f] md:text-6xl">
-          Our Services
-        </h1>
-        <p class="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-600 md:text-xl">
-          Comprehensive travel solutions across Kenya — from corporate events to wildlife safaris,
-          transport to immigration support.
-        </p>
       </div>
     </div>
   </section>
 
-  <section class="sticky top-0 z-40 border-b border-gray-200 bg-white shadow-sm">
-    <div class="container mx-auto px-4 md:px-8 lg:px-12">
-      <div class="hidden items-center gap-2 py-4 md:flex">
-        <a class="rounded-lg bg-[#011a1f] px-6 py-3 font-semibold text-white" href="#all">All</a>
-        <a class="rounded-lg bg-gray-100 px-6 py-3 font-semibold text-gray-700 transition-all hover:bg-gray-200" href="#mice">MICE</a>
-        <a class="rounded-lg bg-gray-100 px-6 py-3 font-semibold text-gray-700 transition-all hover:bg-gray-200" href="#experiential">Experiential</a>
-        <a class="rounded-lg bg-gray-100 px-6 py-3 font-semibold text-gray-700 transition-all hover:bg-gray-200" href="#support">Support</a>
-      </div>
-      <div class="flex gap-2 overflow-x-auto py-4 md:hidden">
-        <a class="whitespace-nowrap rounded-lg bg-[#011a1f] px-5 py-3 text-sm font-semibold text-white" href="#all">All</a>
-        <a class="whitespace-nowrap rounded-lg bg-gray-100 px-5 py-3 text-sm font-semibold text-gray-700" href="#mice">MICE</a>
-        <a class="whitespace-nowrap rounded-lg bg-gray-100 px-5 py-3 text-sm font-semibold text-gray-700" href="#experiential">Experiential</a>
-        <a class="whitespace-nowrap rounded-lg bg-gray-100 px-5 py-3 text-sm font-semibold text-gray-700" href="#support">Support</a>
+  <section class="premium-anchor-nav premium-pill-nav shadow-sm">
+    <div class="premium-container">
+      <div class="flex gap-3 overflow-x-auto py-4">
+        <a class="premium-tab premium-tab-active" href="#mice">MICE</a>
+        <a class="premium-tab" href="#experiential">Experiential</a>
+        <a class="premium-tab" href="#support">Support</a>
+        <a class="premium-tab" href="#why">Why Us</a>
       </div>
     </div>
   </section>
 
-  <section id="all" class="py-16 md:py-20">
-    <div class="container mx-auto px-4 md:px-8 lg:px-12">
-      <div class="space-y-16">
-        <section id="mice" class="scroll-mt-24">
-          <div class="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-            <div>
-              <h2 class="text-3xl font-bold text-[#011a1f] md:text-4xl">MICE &amp; Business Travel</h2>
-              <p class="mt-3 text-gray-600">Corporate events and business travel across Kenya.</p>
-            </div>
-            <a class="inline-flex rounded-lg bg-gradient-to-r from-[#d75128] to-[#ffa119] px-5 py-3 text-sm font-bold text-white shadow-lg" href="/services/mice">
-              View All MICE &amp; Business Travel
-            </a>
+  <section id="mice" class="premium-anchor-target bg-white premium-section">
+    <div class="premium-container">
+      <div class="premium-reveal mb-12 max-w-4xl">
+        <p class="premium-eyebrow">MICE & Business Travel</p>
+        <h2 class="premium-heading mt-4 text-3xl md:text-5xl">Corporate Events and Business Travel</h2>
+        <p class="mt-5 text-lg leading-8 text-gray-600">Meetings, incentives, conferences, exhibitions, retreats, delegation travel, and on-ground corporate support.</p>
+      </div>
+      <div class="grid gap-8 lg:grid-cols-[1.05fr_1.4fr]">
+        <a class="premium-card premium-solution-card premium-reveal" href="/services/mice/">
+          <img src="{% static 'site_mirror/images/mice-hero.webp' %}" alt="MICE and business travel" class="h-80 w-full object-cover" />
+          <div class="premium-card-body p-7 md:p-8">
+            <p class="text-sm font-bold uppercase tracking-wider text-[#d75128]">End-to-end coordination</p>
+            <h3 class="mt-2 text-2xl font-bold text-[#011a1f]">MICE & Business Travel</h3>
+            <p class="mt-4 leading-7 text-gray-600">Complete event management for meetings, conferences, incentives, exhibitions, and hosted business travel.</p>
+            <span class="premium-card-link inline-flex font-bold text-[#d75128]">View Details</span>
           </div>
-
-          <div class="grid gap-6 lg:grid-cols-3">
-            <article class="overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-gray-100 lg:col-span-1">
-              <img src="{% static 'site_mirror/images/mice-hero.webp' %}" alt="MICE and business travel" class="h-56 w-full object-cover" />
-              <div class="p-6">
-                <h3 class="text-2xl font-bold text-[#011a1f]">MICE &amp; Business Travel</h3>
-                <p class="mt-3 leading-7 text-gray-600">Complete event management for meetings, conferences, incentives, and exhibitions.</p>
-                <a class="mt-5 inline-flex font-bold text-[#d75128]" href="/services/mice">View Details</a>
-              </div>
-            </article>
-
-            <div class="grid gap-4 sm:grid-cols-2 lg:col-span-2">
-              <a class="rounded-2xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl" href="/services/mice/meetings">
-                <h3 class="text-xl font-bold text-[#011a1f]">Corporate Meetings</h3>
-                <p class="mt-2 text-sm leading-6 text-gray-600">Professional meeting planning with complete support.</p>
-                <span class="mt-4 inline-flex text-sm font-bold text-[#d75128]">Learn More</span>
-              </a>
-              <a class="rounded-2xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl" href="/services/mice/incentive-travel">
-                <h3 class="text-xl font-bold text-[#011a1f]">Incentive Travel</h3>
-                <p class="mt-2 text-sm leading-6 text-gray-600">Reward programs combining adventure and luxury.</p>
-                <span class="mt-4 inline-flex text-sm font-bold text-[#d75128]">Learn More</span>
-              </a>
-              <a class="rounded-2xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl" href="/services/mice/conferences">
-                <h3 class="text-xl font-bold text-[#011a1f]">Conferences</h3>
-                <p class="mt-2 text-sm leading-6 text-gray-600">Unique venues from beaches to wildlife settings.</p>
-                <span class="mt-4 inline-flex text-sm font-bold text-[#d75128]">Learn More</span>
-              </a>
-              <a class="rounded-2xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl" href="/services/mice/events-exhibitions">
-                <h3 class="text-xl font-bold text-[#011a1f]">Events &amp; Exhibitions</h3>
-                <p class="mt-2 text-sm leading-6 text-gray-600">Creative production and exhibition management.</p>
-                <span class="mt-4 inline-flex text-sm font-bold text-[#d75128]">Learn More</span>
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section id="experiential" class="scroll-mt-24">
-          <div class="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-            <div>
-              <h2 class="text-3xl font-bold text-[#011a1f] md:text-4xl">Experiential Safaris</h2>
-              <p class="mt-3 text-gray-600">Discover Kenya’s natural wonders.</p>
-            </div>
-            <a class="inline-flex rounded-lg bg-gradient-to-r from-[#d75128] to-[#ffa119] px-5 py-3 text-sm font-bold text-white shadow-lg" href="/services/tours-safaris">
-              View All Experiential Safaris
-            </a>
-          </div>
-
-          <div class="grid gap-6 lg:grid-cols-3">
-            <article class="overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-gray-100 lg:col-span-1">
-              <img src="{% static 'site_mirror/images/safari-hero.png' %}" alt="Experiential safaris" class="h-56 w-full object-cover" />
-              <div class="p-6">
-                <h3 class="text-2xl font-bold text-[#011a1f]">Experiential Safaris</h3>
-                <p class="mt-3 leading-7 text-gray-600">Unforgettable wildlife experiences and cultural tours across Kenya.</p>
-                <a class="mt-5 inline-flex font-bold text-[#d75128]" href="/services/tours-safaris">View Details</a>
-              </div>
-            </article>
-
-            <div class="grid gap-4 sm:grid-cols-2 lg:col-span-2">
-              <a class="rounded-2xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl" href="/services/tours-safaris/tembea-kenya">
-                <h3 class="text-xl font-bold text-[#011a1f]">Tembea Kenya Tours</h3>
-                <p class="mt-2 text-sm leading-6 text-gray-600">Explore Kenya from coast to highlands.</p>
-                <span class="mt-4 inline-flex text-sm font-bold text-[#d75128]">Learn More</span>
-              </a>
-              <a class="rounded-2xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl" href="/services/tours-safaris/inbound-safaris">
-                <h3 class="text-xl font-bold text-[#011a1f]">Inbound Safaris</h3>
-                <p class="mt-2 text-sm leading-6 text-gray-600">Iconic African wildlife adventures.</p>
-                <span class="mt-4 inline-flex text-sm font-bold text-[#d75128]">Learn More</span>
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section id="support" class="scroll-mt-24">
-          <div class="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-            <div>
-              <h2 class="text-3xl font-bold text-[#011a1f] md:text-4xl">Support Services</h2>
-              <p class="mt-3 text-gray-600">Transport, flights, and immigration services for seamless travel.</p>
-            </div>
-            <a class="inline-flex rounded-lg bg-gradient-to-r from-[#d75128] to-[#ffa119] px-5 py-3 text-sm font-bold text-white shadow-lg" href="/services/support-services">
-              View All Support Services
-            </a>
-          </div>
-
-          <div class="grid gap-6 lg:grid-cols-3">
-            <article class="overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-gray-100">
-              <img src="{% static 'site_mirror/images/transport-hero.png' %}" alt="Transport services" class="h-48 w-full object-cover" />
-              <div class="p-6">
-                <h3 class="text-2xl font-bold text-[#011a1f]">Transport</h3>
-                <div class="mt-5 space-y-4">
-                  <a class="block rounded-xl bg-gray-50 p-4 hover:bg-gray-100" href="/services/support-services/ground-transport-logistics">
-                    <span class="font-bold text-[#011a1f]">Safari Vehicles</span>
-                    <span class="mt-1 block text-sm text-gray-600">Premium 4x4 Land Cruisers for game viewing.</span>
-                    <span class="mt-2 inline-flex text-sm font-bold text-[#d75128]">Learn More</span>
-                  </a>
-                  <a class="block rounded-xl bg-gray-50 p-4 hover:bg-gray-100" href="/services/support-services/ground-transport-logistics">
-                    <span class="font-bold text-[#011a1f]">Chauffeur Drive</span>
-                    <span class="mt-1 block text-sm text-gray-600">Executive car hire with professional drivers.</span>
-                    <span class="mt-2 inline-flex text-sm font-bold text-[#d75128]">Learn More</span>
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-gray-100">
-              <img src="{% static 'site_mirror/images/charter-flights-hero.jpg' %}" alt="Flight services" class="h-48 w-full object-cover" />
-              <div class="p-6">
-                <h3 class="text-2xl font-bold text-[#011a1f]">Flights</h3>
-                <div class="mt-5 space-y-4">
-                  <a class="block rounded-xl bg-gray-50 p-4 hover:bg-gray-100" href="/services/support-services/air-charter-flight-logistics">
-                    <span class="font-bold text-[#011a1f]">Scheduled Flights</span>
-                    <span class="mt-1 block text-sm text-gray-600">Domestic flight coordination across Kenya.</span>
-                    <span class="mt-2 inline-flex text-sm font-bold text-[#d75128]">Learn More</span>
-                  </a>
-                  <a class="block rounded-xl bg-gray-50 p-4 hover:bg-gray-100" href="/services/support-services/air-charter-flight-logistics">
-                    <span class="font-bold text-[#011a1f]">Charter Flights</span>
-                    <span class="mt-1 block text-sm text-gray-600">Private charter for luxury and flexibility.</span>
-                    <span class="mt-2 inline-flex text-sm font-bold text-[#d75128]">Learn More</span>
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-gray-100">
-              <img src="{% static 'site_mirror/images/immigration-hero.png' %}" alt="Immigration support" class="h-48 w-full object-cover" />
-              <div class="p-6">
-                <h3 class="text-2xl font-bold text-[#011a1f]">Immigration</h3>
-                <div class="mt-5 space-y-4">
-                  <a class="block rounded-xl bg-gray-50 p-4 hover:bg-gray-100" href="/services/support-services/travel-documents-and-visas">
-                    <span class="font-bold text-[#011a1f]">ETA Services</span>
-                    <span class="mt-1 block text-sm text-gray-600">Fast, reliable ETA processing.</span>
-                    <span class="mt-2 inline-flex text-sm font-bold text-[#d75128]">Learn More</span>
-                  </a>
-                  <a class="block rounded-xl bg-gray-50 p-4 hover:bg-gray-100" href="/services/support-services/travel-documents-and-visas">
-                    <span class="font-bold text-[#011a1f]">Visa Extensions</span>
-                    <span class="mt-1 block text-sm text-gray-600">Extend your stay legally and hassle-free.</span>
-                    <span class="mt-2 inline-flex text-sm font-bold text-[#d75128]">Learn More</span>
-                  </a>
-                  <a class="block rounded-xl bg-gray-50 p-4 hover:bg-gray-100" href="/services/support-services/travel-documents-and-visas">
-                    <span class="font-bold text-[#011a1f]">Work Permits</span>
-                    <span class="mt-1 block text-sm text-gray-600">Complete work and residence permit solutions.</span>
-                    <span class="mt-2 inline-flex text-sm font-bold text-[#d75128]">Learn More</span>
-                  </a>
-                  <a class="block rounded-xl bg-gray-50 p-4 hover:bg-gray-100" href="/services/support-services/travel-documents-and-visas">
-                    <span class="font-bold text-[#011a1f]">Resident Passports</span>
-                    <span class="mt-1 block text-sm text-gray-600">Passport services for Kenya residents.</span>
-                    <span class="mt-2 inline-flex text-sm font-bold text-[#d75128]">Learn More</span>
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
-        </section>
+        </a>
+        <div class="grid gap-6 md:grid-cols-2">
+          <a class="premium-card premium-reveal premium-delay-1 p-7" href="/services/mice/meetings/"><h3 class="text-xl font-bold text-[#011a1f]">Corporate Meetings</h3><p class="mt-3 leading-7 text-gray-600">Professional meeting planning with venues, AV, catering, and on-site support.</p><span class="mt-5 inline-flex font-bold text-[#d75128]">Learn More</span></a>
+          <a class="premium-card premium-reveal premium-delay-2 p-7" href="/services/mice/incentive-travel/"><h3 class="text-xl font-bold text-[#011a1f]">Incentive Travel</h3><p class="mt-3 leading-7 text-gray-600">Reward programs combining safari, culture, coast, and premium stays.</p><span class="mt-5 inline-flex font-bold text-[#d75128]">Learn More</span></a>
+          <a class="premium-card premium-reveal premium-delay-3 p-7" href="/services/mice/conferences/"><h3 class="text-xl font-bold text-[#011a1f]">Conferences</h3><p class="mt-3 leading-7 text-gray-600">Destination-led conferences in memorable venues across Kenya.</p><span class="mt-5 inline-flex font-bold text-[#d75128]">Learn More</span></a>
+          <a class="premium-card premium-reveal premium-delay-4 p-7" href="/services/mice/events-exhibitions/"><h3 class="text-xl font-bold text-[#011a1f]">Events & Exhibitions</h3><p class="mt-3 leading-7 text-gray-600">Creative production, booth design, launches, activations, and trade shows.</p><span class="mt-5 inline-flex font-bold text-[#d75128]">Learn More</span></a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="bg-white py-16">
-    <div class="container mx-auto px-4 md:px-8 lg:px-12">
-      <div class="mx-auto mb-12 max-w-4xl text-center">
-        <h2 class="mb-4 text-3xl font-bold text-[#011a1f] md:text-4xl">Why Choose Come Travel Kenya</h2>
-        <p class="text-gray-600">Your trusted partner for unforgettable experiences across Kenya.</p>
+  <section id="experiential" class="premium-anchor-target premium-section">
+    <div class="premium-container">
+      <div class="premium-reveal mx-auto mb-12 max-w-4xl text-center">
+        <p class="premium-eyebrow justify-center">Experiential Safaris</p>
+        <h2 class="premium-heading mt-4 text-3xl md:text-5xl">Safari and Local Kenya Experiences</h2>
+        <p class="mt-5 text-lg leading-8 text-gray-600">Inbound safaris, Tembea Kenya trips, local escapes, and destination experiences designed with practical ground handling.</p>
       </div>
-      <div class="grid gap-6 text-center md:grid-cols-4">
-        <div class="rounded-2xl bg-gray-50 p-8 shadow-sm"><p class="text-4xl font-bold text-[#d75128]">3000+</p><p class="mt-2 font-semibold text-gray-600">Happy Clients</p></div>
-        <div class="rounded-2xl bg-gray-50 p-8 shadow-sm"><p class="text-4xl font-bold text-[#d75128]">15+</p><p class="mt-2 font-semibold text-gray-600">Services Offered</p></div>
-        <div class="rounded-2xl bg-gray-50 p-8 shadow-sm"><p class="text-4xl font-bold text-[#d75128]">5+</p><p class="mt-2 font-semibold text-gray-600">Years Experience</p></div>
-        <div class="rounded-2xl bg-gray-50 p-8 shadow-sm"><p class="text-4xl font-bold text-[#d75128]">98%</p><p class="mt-2 font-semibold text-gray-600">Success Rate</p></div>
+      <div class="grid gap-8 md:grid-cols-2">
+        <a class="premium-card premium-solution-card premium-reveal premium-delay-1" href="/services/tours-safaris/tembea-kenya/"><img src="{% static 'site_mirror/images/tembea-kenya-hero.png' %}" alt="Tembea Kenya Tours" class="h-80 w-full object-cover" /><div class="premium-card-body p-7 md:p-8"><p class="text-sm font-bold uppercase tracking-wider text-[#d75128]">Local travel</p><h3 class="mt-2 text-2xl font-bold text-[#011a1f]">Tembea Kenya Tours</h3><p class="mt-4 leading-7 text-gray-600">Local getaways, coast escapes, highland trips, and short safaris for residents, expats, and teams.</p><span class="premium-card-link inline-flex font-bold text-[#d75128]">Learn More</span></div></a>
+        <a class="premium-card premium-solution-card premium-reveal premium-delay-2" href="/services/tours-safaris/inbound-safaris/"><img src="{% static 'site_mirror/images/inbound-safari-hero.png' %}" alt="Inbound Safaris" class="h-80 w-full object-cover" /><div class="premium-card-body p-7 md:p-8"><p class="text-sm font-bold uppercase tracking-wider text-[#d75128]">International guests</p><h3 class="mt-2 text-2xl font-bold text-[#011a1f]">Inbound Safaris</h3><p class="mt-4 leading-7 text-gray-600">Wildlife circuits, lodges, transfers, domestic flights, and beach extensions for Kenya-bound visitors.</p><span class="premium-card-link inline-flex font-bold text-[#d75128]">Learn More</span></div></a>
       </div>
     </div>
   </section>
 
-  <section class="bg-[#011a1f] py-16 text-white">
-    <div class="container mx-auto px-4 text-center md:px-8 lg:px-12">
-      <h2 class="text-3xl font-bold md:text-4xl">Ready to Start Your Journey?</h2>
-      <p class="mx-auto mt-4 max-w-2xl text-white/75">Get in touch with our team to plan your perfect experience.</p>
-      <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-        <a class="rounded-xl bg-gradient-to-r from-[#d75128] to-[#ffa119] px-6 py-3 font-bold text-white shadow-lg" href="/contact">Get Started</a>
-        <a class="rounded-xl border border-white/20 px-6 py-3 font-bold text-white hover:bg-white/10" href="tel:+254726436676">Call +254 726 436 676</a>
+  <section id="support" class="premium-anchor-target bg-white premium-section">
+    <div class="premium-container">
+      <div class="premium-reveal mx-auto mb-12 max-w-4xl text-center">
+        <p class="premium-eyebrow justify-center">Travel Support</p>
+        <h2 class="premium-heading mt-4 text-3xl md:text-5xl">Transport, Flights, and Documentation</h2>
+        <p class="mt-5 text-lg leading-8 text-gray-600">Reliable logistics for safaris, corporate programs, events, delegations, and independent travel.</p>
+      </div>
+      <div class="grid gap-8 md:grid-cols-3">
+        <a class="premium-card premium-solution-card premium-reveal premium-delay-1" href="/services/support-services/ground-transport-logistics/"><img src="{% static 'site_mirror/images/transport-hero.png' %}" alt="Ground transport" class="h-72 w-full object-cover" /><div class="premium-card-body p-7"><h3 class="text-2xl font-bold text-[#011a1f]">Ground Transport</h3><p class="mt-4 leading-7 text-gray-600">Safari vehicles, executive cars, coaches, transfers, and event movement planning.</p><span class="premium-card-link inline-flex font-bold text-[#d75128]">Learn More</span></div></a>
+        <a class="premium-card premium-solution-card premium-reveal premium-delay-2" href="/services/support-services/air-charter-flight-logistics/"><img src="{% static 'site_mirror/images/charter-flights-hero.jpg' %}" alt="Flight logistics" class="h-72 w-full object-cover" /><div class="premium-card-body p-7"><h3 class="text-2xl font-bold text-[#011a1f]">Air & Charter Coordination</h3><p class="mt-4 leading-7 text-gray-600">Domestic flights, charter requests, airstrip transfers, and multi-destination route planning.</p><span class="premium-card-link inline-flex font-bold text-[#d75128]">Learn More</span></div></a>
+        <a class="premium-card premium-solution-card premium-reveal premium-delay-3" href="/services/support-services/travel-documents-and-visas/"><img src="{% static 'site_mirror/images/immigration-hero.png' %}" alt="Travel documents" class="h-72 w-full object-cover" /><div class="premium-card-body p-7"><h3 class="text-2xl font-bold text-[#011a1f]">Travel Documents</h3><p class="mt-4 leading-7 text-gray-600">ETA guidance, extensions, permits, group document tracking, and travel insurance coordination.</p><span class="premium-card-link inline-flex font-bold text-[#d75128]">Learn More</span></div></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="premium-anchor-target bg-[#011a1f] py-20 text-white">
+    <div class="premium-container">
+      <div class="grid gap-7 md:grid-cols-4">
+        <div class="premium-stat-card premium-reveal premium-delay-1 rounded-3xl p-8 text-center"><p class="text-4xl font-bold text-[#ffa119]">15+</p><p class="mt-2 text-white/75">Services Offered</p></div>
+        <div class="premium-stat-card premium-reveal premium-delay-2 rounded-3xl p-8 text-center"><p class="text-4xl font-bold text-[#ffa119]">200+</p><p class="mt-2 text-white/75">Corporate Clients</p></div>
+        <div class="premium-stat-card premium-reveal premium-delay-3 rounded-3xl p-8 text-center"><p class="text-4xl font-bold text-[#ffa119]">24/7</p><p class="mt-2 text-white/75">Travel Support</p></div>
+        <div class="premium-stat-card premium-reveal premium-delay-4 rounded-3xl p-8 text-center"><p class="text-4xl font-bold text-[#ffa119]">98%</p><p class="mt-2 text-white/75">Success Rate</p></div>
+      </div>
+      <div class="premium-reveal mx-auto mt-16 max-w-4xl text-center">
+        <h2 class="text-3xl font-extrabold tracking-[-0.035em] md:text-5xl">Ready to Start Your Journey?</h2>
+        <p class="mt-5 text-lg leading-8 text-white/75">Send us your brief and we’ll recommend the right service path.</p>
+        <a class="premium-button-primary mt-8" href="/contact">Get Started</a>
       </div>
     </div>
   </section>

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block page_head %}
+  <title>FAQs | Multiscope Travel</title>
+  <meta name="description" content="Frequently asked questions about Multiscope Travel MICE, safaris, logistics, and travel support services in Kenya." />
+{% endblock %}
+
+{% block page_content %}
+<main class="premium-page text-gray-900">
+  <section class="premium-mice-hero relative overflow-hidden bg-[#011a1f] text-white">
+    <div class="absolute inset-0 bg-gradient-to-r from-[#011a1f] via-[#011a1f]/95 to-[#011a1f]/65"></div>
+    <div class="premium-container premium-mice-hero-inner relative">
+      <div class="premium-hero-copy-wide premium-reveal premium-reveal-left">
+        <p class="premium-mice-hero-pill inline-flex rounded-full bg-white/10 px-5 py-2 text-sm font-bold text-[#ffa119] ring-1 ring-white/15">Quick Answers</p>
+        <h1 class="text-4xl font-extrabold leading-tight tracking-[-0.045em] md:text-6xl">Frequently Asked Questions</h1>
+        <p class="premium-mice-hero-text max-w-3xl text-lg text-white/80 md:text-xl">Common questions about corporate travel, MICE programs, safaris, logistics, and documentation support.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="premium-section bg-white">
+    <div class="premium-container">
+      <div class="grid gap-10 lg:grid-cols-3">
+        <div class="premium-card premium-reveal p-7"><h2 class="text-2xl font-bold text-[#011a1f]">MICE & Business Travel</h2><div class="mt-6 space-y-4"><details class="premium-faq-card" open><summary>What types of events do you handle?</summary><div class="premium-faq-answer">Meetings, incentives, conferences, exhibitions, retreats, launches, and delegation travel.</div></details><details class="premium-faq-card"><summary>Do you work outside Nairobi?</summary><div class="premium-faq-answer">Yes. We coordinate programs across Kenya with local supplier support.</div></details></div></div>
+        <div class="premium-card premium-reveal premium-delay-1 p-7"><h2 class="text-2xl font-bold text-[#011a1f]">Safaris & Experiences</h2><div class="mt-6 space-y-4"><details class="premium-faq-card" open><summary>When is best for safari?</summary><div class="premium-faq-answer">Kenya is year-round; best timing depends on parks, migration interest, budget, and travel style.</div></details><details class="premium-faq-card"><summary>Can you combine safari and coast?</summary><div class="premium-faq-answer">Yes. Safari-to-beach programs are common and can include domestic flights.</div></details></div></div>
+        <div class="premium-card premium-reveal premium-delay-2 p-7"><h2 class="text-2xl font-bold text-[#011a1f]">Travel Support</h2><div class="mt-6 space-y-4"><details class="premium-faq-card" open><summary>Do you provide transport?</summary><div class="premium-faq-answer">Yes. We coordinate executive cars, safari vehicles, coaches, transfers, and event shuttles.</div></details><details class="premium-faq-card"><summary>Do you assist with documents?</summary><div class="premium-faq-answer">We provide practical coordination support for ETA guidance, extensions, permits, and group tracking.</div></details></div></div>
+      </div>
+      <div class="premium-reveal mx-auto mt-16 max-w-3xl text-center">
+        <h2 class="premium-heading text-3xl">Still Have Questions?</h2>
+        <p class="mt-4 text-gray-600">Send us your travel brief and we’ll respond with practical next steps.</p>
+        <a class="premium-button-primary mt-7" href="/contact">Contact Us</a>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}

@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_head %}
+  <title>{{ service_page.page_title }}</title>
+  <meta name="description" content="{{ service_page.meta_description }}" />
+  <link rel="canonical" href="{{ service_page.canonical }}" />
+{% endblock %}
+
+{% block page_content %}
+<main class="premium-page text-gray-900">
+  <section class="premium-hero premium-mice-hero relative overflow-hidden bg-[#011a1f] text-white">
+    <div class="absolute inset-0">
+      <img src="{% static service_page.image %}" alt="{{ service_page.title }}" class="h-full w-full object-cover opacity-30" />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#011a1f] via-[#011a1f]/90 to-[#011a1f]/45"></div>
+    </div>
+    <div class="premium-container premium-mice-hero-inner relative">
+      <nav class="mb-7 flex flex-wrap items-center gap-2 text-sm text-white/70">
+        <a class="hover:text-white" href="/">Home</a><span>/</span>
+        <a class="hover:text-white" href="/services/">Services</a><span>/</span>
+        <a class="hover:text-white" href="{{ service_page.breadcrumb_parent_url }}">{{ service_page.breadcrumb_parent }}</a><span>/</span>
+        <span class="text-white">{{ service_page.title }}</span>
+      </nav>
+      <div class="premium-hero-grid premium-hero-grid-copy">
+        <div class="premium-hero-copy-wide premium-mice-hero-copy premium-reveal premium-reveal-left">
+          <p class="premium-mice-hero-pill inline-flex rounded-full bg-white/10 px-5 py-2 text-sm font-bold text-[#ffa119] ring-1 ring-white/15">{{ service_page.eyebrow }}</p>
+          <h1 class="text-4xl font-extrabold leading-tight tracking-[-0.045em] md:text-6xl lg:text-7xl">{{ service_page.title }}</h1>
+          <p class="premium-mice-hero-text max-w-3xl text-lg text-white/80 md:text-xl">{{ service_page.description }}</p>
+          <div class="premium-mice-hero-actions flex flex-col sm:flex-row">
+            <a class="premium-button-primary" href="/contact">Request Quote</a>
+            <a class="premium-button-secondary" href="#learn-more">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="premium-anchor-nav premium-pill-nav shadow-sm">
+    <div class="premium-container">
+      <div class="flex gap-3 overflow-x-auto py-4">
+        <a class="premium-tab premium-tab-active" href="#learn-more">Learn More</a>
+        <a class="premium-tab" href="#process">Process</a>
+        <a class="premium-tab" href="#faq">FAQ</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="learn-more" class="premium-anchor-target bg-white premium-section">
+    <div class="premium-container">
+      <div class="premium-reveal mx-auto max-w-4xl text-center">
+        <p class="premium-eyebrow justify-center">Service Overview</p>
+        <h2 class="premium-heading mt-4 text-3xl md:text-5xl">{{ service_page.learn_title }}</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-600">{{ service_page.learn_intro }}</p>
+      </div>
+      <div class="premium-feature-grid mt-14">
+        {% for feature in service_page.features %}
+          {% cycle 'premium-delay-1' 'premium-delay-2' 'premium-delay-3' 'premium-delay-4' as feature_delay silent %}
+          <article class="premium-card premium-feature-card premium-reveal {{ feature_delay }}">
+            <div class="premium-feature-icon">
+              <svg aria-hidden="true" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M20 6 9 17l-5-5"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#011a1f]">{{ feature.title }}</h3>
+            <p class="mt-4 leading-7 text-gray-600">{{ feature.description }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="premium-anchor-target premium-section">
+    <div class="premium-container">
+      <div class="premium-reveal mx-auto mb-12 max-w-4xl text-center">
+        <p class="premium-eyebrow justify-center">How We Work</p>
+        <h2 class="premium-heading mt-4 text-3xl md:text-5xl">{{ service_page.process_title }}</h2>
+      </div>
+      <div class="premium-timeline">
+        {% for step in service_page.process %}
+          {% cycle 'premium-delay-1' 'premium-delay-2' 'premium-delay-3' 'premium-delay-4' as process_delay silent %}
+          <article class="premium-timeline-step premium-reveal {{ process_delay }}">
+            <div class="premium-timeline-icon">
+              <span class="premium-timeline-index">{{ forloop.counter }}</span>
+              <svg aria-hidden="true" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M20 6 9 17l-5-5"></path></svg>
+            </div>
+            <div class="premium-timeline-content">
+              <h3 class="text-xl font-bold text-[#011a1f]">{{ step.title }}</h3>
+              <p class="mt-3 leading-7 text-gray-600">{{ step.description }}</p>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="premium-anchor-target bg-white premium-section">
+    <div class="premium-container">
+      <div class="premium-reveal mx-auto max-w-3xl text-center">
+        <p class="premium-eyebrow justify-center">Answers Before You Brief Us</p>
+        <h2 class="premium-heading mt-4 text-3xl md:text-5xl">{{ service_page.title }} FAQs</h2>
+      </div>
+      <div class="mx-auto mt-12 max-w-4xl">
+        <div class="space-y-5">
+          {% for faq in service_page.faqs %}
+            {% cycle 'premium-delay-1' 'premium-delay-2' 'premium-delay-3' as faq_delay silent %}
+            <details class="premium-card premium-faq-card premium-reveal {{ faq_delay }}"{% if forloop.first %} open{% endif %}>
+              <summary class="cursor-pointer">{{ faq.question }}</summary>
+              <div class="premium-faq-answer">{{ faq.answer }}</div>
+            </details>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-[#011a1f] py-20 text-white">
+    <div class="premium-container">
+      <div class="grid gap-7 md:grid-cols-3">
+        {% for value, label in service_page.stats %}
+          {% cycle 'premium-delay-1' 'premium-delay-2' 'premium-delay-3' as stat_delay silent %}
+          <div class="premium-stat-card premium-reveal {{ stat_delay }} rounded-3xl p-8 text-center">
+            <p class="text-4xl font-bold text-[#ffa119]">{{ value }}</p>
+            <p class="mt-2 text-white/75">{{ label }}</p>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="premium-reveal mx-auto mt-16 max-w-4xl text-center">
+        <h2 class="text-3xl font-extrabold tracking-[-0.035em] md:text-5xl">{{ service_page.cta_title }}</h2>
+        <p class="mt-5 text-lg leading-8 text-white/75">Contact us today for a focused proposal and practical next steps.</p>
+        <div class="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
+          <a class="premium-button-primary" href="/contact">Request Quote</a>
+          <a class="premium-button-secondary" href="tel:+254726436676">Call Us Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}

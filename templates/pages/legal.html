@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block page_head %}
+  {% if legal_page == "privacy" %}
+    <title>Privacy Policy | Multiscope Travel</title>
+    <meta name="description" content="Privacy policy for Multiscope Travel." />
+  {% else %}
+    <title>Terms and Conditions | Multiscope Travel</title>
+    <meta name="description" content="Terms and conditions for Multiscope Travel services." />
+  {% endif %}
+{% endblock %}
+
+{% block page_content %}
+<main class="premium-page text-gray-900">
+  <section class="premium-section bg-white">
+    <div class="premium-container">
+      <article class="premium-card premium-reveal mx-auto max-w-4xl p-8 md:p-12">
+        {% if legal_page == "privacy" %}
+          <p class="premium-eyebrow">Privacy</p>
+          <h1 class="premium-heading mt-4 text-4xl md:text-5xl">Privacy Policy</h1>
+          <div class="mt-8 space-y-6 leading-8 text-gray-600">
+            <p>Multiscope Travel respects your privacy. Information submitted through our website is used to respond to inquiries, prepare travel proposals, manage newsletter requests, and support service delivery.</p>
+            <p>We may collect your name, email address, phone number, service interest, travel brief, and communication preferences. We do not sell your personal information.</p>
+            <p>For privacy questions or deletion requests, contact <a class="font-bold text-[#d75128]" href="mailto:travel@multiscopetravel.com">travel@multiscopetravel.com</a>.</p>
+          </div>
+        {% else %}
+          <p class="premium-eyebrow">Terms</p>
+          <h1 class="premium-heading mt-4 text-4xl md:text-5xl">Terms and Conditions</h1>
+          <div class="mt-8 space-y-6 leading-8 text-gray-600">
+            <p>These terms apply to inquiries, proposals, bookings, and services coordinated by Multiscope Travel. Final booking terms may vary by supplier, destination, and confirmed service scope.</p>
+            <p>Quotes are subject to availability, supplier confirmation, currency changes, park fees, taxes, and operational considerations at the time of booking.</p>
+            <p>Clients are responsible for accurate traveler details, valid travel documents, insurance, and timely payment according to confirmed booking terms.</p>
+          </div>
+        {% endif %}
+      </article>
+    </div>
+  </section>
+</main>
+{% endblock %}

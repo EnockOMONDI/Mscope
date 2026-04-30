@@ -186,6 +186,265 @@ def _mice_detail_context(page_key: str) -> dict:
     }
 
 
+STATIC_BLOG_POSTS = [
+    {
+        "category": "MICE",
+        "date": "February 22, 2026",
+        "read_time": "8 min read",
+        "title": "Why MICE Is Kenya’s Strategic Business Travel Advantage",
+        "excerpt": "Kenya’s conference infrastructure, destination appeal, and regional access make it a strong base for meetings, incentives, conferences, and exhibitions.",
+        "author": "Multiscope Travel Team",
+        "image": "site_mirror/itineraries/mice/conference-experience.jpg",
+    },
+    {
+        "category": "Safaris",
+        "date": "January 26, 2026",
+        "read_time": "6 min read",
+        "title": "How to Pair Corporate Travel With Safari Experiences",
+        "excerpt": "A practical guide to adding safari, culture, coast, and conservation experiences to business travel programs without compromising logistics.",
+        "author": "Travel Design Desk",
+        "image": "site_mirror/images/safari-hero.png",
+    },
+    {
+        "category": "Travel Support",
+        "date": "November 18, 2025",
+        "read_time": "7 min read",
+        "title": "Ground Transport Planning for Delegations in Kenya",
+        "excerpt": "What corporate buyers should consider when arranging airport transfers, executive cars, group coaches, safari vehicles, and event shuttles.",
+        "author": "Operations Team",
+        "image": "site_mirror/images/transport-hero.png",
+    },
+]
+
+
+STATIC_EXPERIENCES = [
+    {
+        "title": "Executive Safari & Board Retreat",
+        "tagline": "MICE + wilderness",
+        "description": "A focused corporate retreat combining productive strategy sessions with guided safari experiences and premium lodge stays.",
+        "image": "site_mirror/itineraries/mice/leadership-in-the-wild.png",
+    },
+    {
+        "title": "Kenya Discovery Safari & Beach",
+        "tagline": "Safari + coast",
+        "description": "A balanced itinerary across wildlife conservancies, cultural encounters, and coastal rest designed for private groups.",
+        "image": "site_mirror/itineraries/safaris/kenya-discovery-safari-beach-13-days.png",
+    },
+    {
+        "title": "Tembea Kenya Weekend Escape",
+        "tagline": "Local travel",
+        "description": "Short, fully managed getaways for residents, expats, and teams seeking accessible Kenya experiences.",
+        "image": "site_mirror/itineraries/tours/family-camping-sagana-rapids.png",
+    },
+]
+
+
+SERVICE_DETAIL_PAGES = {
+    "inbound_safaris": {
+        "page_title": "Inbound Safaris Kenya | Multiscope Travel",
+        "meta_description": "Inbound Kenya safari planning for international visitors with wildlife circuits, lodges, guides, transfers, and beach extensions.",
+        "canonical": "/services/tours-safaris/inbound-safaris",
+        "breadcrumb_parent": "Experiential Safaris",
+        "breadcrumb_parent_url": "/services/tours-safaris/",
+        "title": "Inbound Safaris",
+        "eyebrow": "Iconic African wildlife adventures",
+        "description": "World-class safari experiences for international visitors, planned end to end across Kenya’s parks, conservancies, and coast.",
+        "image": "site_mirror/images/inbound-safari-hero.png",
+        "learn_title": "Learn More About Inbound Safaris",
+        "learn_intro": "We help international guests experience Kenya with confidence: carefully selected routes, lodges, guides, transfers, park logistics, and optional beach extensions.",
+        "features": [
+            {"title": "Wildlife Circuits", "description": "Masai Mara, Amboseli, Samburu, Laikipia, Tsavo, Lake Nakuru, and custom safari combinations."},
+            {"title": "Lodge Selection", "description": "Comfortable camps, luxury lodges, boutique properties, and family-friendly options."},
+            {"title": "Guided Experiences", "description": "Experienced guides and driver-guides who understand wildlife, culture, and guest care."},
+            {"title": "Beach Extensions", "description": "Safari-to-coast planning for Diani, Watamu, Malindi, Lamu, and Mombasa."},
+        ],
+        "process_title": "Our Inbound Safari Process",
+        "process": [
+            {"title": "Travel Brief", "description": "We define travel dates, budget, group profile, pace, and must-see experiences."},
+            {"title": "Route Design", "description": "We build a practical safari circuit with accommodation and transport options."},
+            {"title": "Supplier Coordination", "description": "We align lodges, guides, flights, transfers, park fees, and special requests."},
+            {"title": "Hosted Delivery", "description": "We monitor the trip locally and support guests through every movement."},
+        ],
+        "faqs": [
+            {"question": "When is best for Kenya safari?", "answer": "Kenya is a year-round safari destination, with peak wildlife seasons depending on parks, migration timing, and travel style."},
+            {"question": "Can I combine safari with beach?", "answer": "Yes. Safari and coast combinations are common and can include domestic flights or road transfers."},
+            {"question": "Can you support families?", "answer": "Yes. We select family-friendly routes, vehicles, lodges, and activity pacing."},
+        ],
+        "cta_title": "Ready to Plan Your Kenya Safari?",
+        "stats": [("20+", "Safari Destinations"), ("3000+", "Happy Travelers"), ("25+", "Expert Guides")],
+    },
+    "tembea_kenya": {
+        "page_title": "Tembea Kenya Tours | Multiscope Travel",
+        "meta_description": "Tembea Kenya tours for residents, expats, and local travelers including coast escapes, Rift Valley trips, hikes, and safari getaways.",
+        "canonical": "/services/tours-safaris/tembea-kenya",
+        "breadcrumb_parent": "Experiential Safaris",
+        "breadcrumb_parent_url": "/services/tours-safaris/",
+        "title": "Tembea Kenya Tours",
+        "eyebrow": "Coast, highlands, Rift Valley, and safari escapes",
+        "description": "Local Kenya trips for residents, expats, teams, and visitors seeking managed weekend escapes, staycations, and short safaris.",
+        "image": "site_mirror/images/tembea-kenya-hero.png",
+        "learn_title": "Learn More About Tembea Kenya Tours",
+        "learn_intro": "Rediscover Kenya through fresh eyes with fully managed transport, accommodation, guides, activities, and destination coordination.",
+        "features": [
+            {"title": "Curated Itineraries", "description": "Carefully planned routes across the coast, Rift Valley, highlands, parks, and cultural destinations."},
+            {"title": "Comfortable Transport", "description": "Modern vehicles and experienced drivers matched to the route and group size."},
+            {"title": "Quality Accommodation", "description": "Handpicked hotels, lodges, camps, and resorts based on budget and travel style."},
+            {"title": "Local Guides", "description": "Guides and hosts who bring destination stories, culture, and logistics together."},
+        ],
+        "process_title": "Our Tembea Kenya Process",
+        "process": [
+            {"title": "Choose Destination", "description": "Select from curated packages or request a custom local escape."},
+            {"title": "Pick Your Dates", "description": "Choose dates, group size, accommodation level, and preferred activities."},
+            {"title": "Book & Confirm", "description": "We secure suppliers, transport, rooms, and activity slots."},
+            {"title": "Experience Kenya", "description": "Travel with local support and a clear plan from start to finish."},
+        ],
+        "faqs": [
+            {"question": "Are Tembea Kenya tours only for Kenyan residents?", "answer": "No. They are ideal for residents, expats, visiting friends and family, and local corporate teams."},
+            {"question": "Can I join a group or book privately?", "answer": "Both are possible depending on the destination, dates, and available departures."},
+            {"question": "Do you offer corporate packages?", "answer": "Yes. We can design team retreats, reward trips, and short staff getaways."},
+        ],
+        "cta_title": "Ready to Experience Kenya Locally?",
+        "stats": [("40+", "Local Routes"), ("1000+", "Happy Clients"), ("24/7", "Support")],
+    },
+    "ground_transport": {
+        "page_title": "Ground Transport & Logistics Kenya | Multiscope Travel",
+        "meta_description": "Professional ground transport and logistics in Kenya for safaris, corporate travel, events, airport transfers, and group movement.",
+        "canonical": "/services/support-services/ground-transport-logistics",
+        "breadcrumb_parent": "Travel Support",
+        "breadcrumb_parent_url": "/services/support-services/",
+        "title": "Ground Transport & Logistics",
+        "eyebrow": "Reliable ground mobility across Kenya",
+        "description": "Professional ground transport for safaris, corporate travel, events, airport transfers, and group travel logistics.",
+        "image": "site_mirror/images/transport-hero.png",
+        "learn_title": "Learn More About Ground Transport & Logistics",
+        "learn_intro": "From Nairobi movements to remote destination access, we coordinate safari vehicles, executive cars, coaches, transfers, and event transport.",
+        "features": [
+            {"title": "Safari Land Cruisers", "description": "Custom 4x4s for wildlife safaris, conservancies, and rugged field routes."},
+            {"title": "Luxury Chauffeur Service", "description": "Premium vehicles for executives, VIPs, hosted buyers, and delegation leaders."},
+            {"title": "Group Transport", "description": "Coaches, shuttles, and convoy planning for conferences and group programs."},
+            {"title": "Professional Drivers", "description": "Experienced, licensed drivers and driver-guides with local route knowledge."},
+        ],
+        "process_title": "Our Ground Transport Process",
+        "process": [
+            {"title": "Assessment", "description": "We confirm group size, route, luggage, timing, destination access, and vehicle needs."},
+            {"title": "Fleet Selection", "description": "We match appropriate vehicles and drivers to your movement plan."},
+            {"title": "Route Planning", "description": "We optimize timing, pickup points, transfers, and contingency routes."},
+            {"title": "Execution", "description": "We manage safe, reliable movement with live operational support."},
+        ],
+        "faqs": [
+            {"question": "Do you provide airport transfers?", "answer": "Yes. Airport transfers can be arranged for individuals, executives, families, and groups."},
+            {"question": "Can you handle large conference groups?", "answer": "Yes. We can coordinate shuttles, coaches, VIP cars, and staged movement plans."},
+            {"question": "Are drivers licensed?", "answer": "We work with experienced, licensed drivers and driver-guides appropriate for the service."},
+        ],
+        "cta_title": "Ready to Coordinate Your Ground Transport?",
+        "stats": [("50+", "Fleet Options"), ("200+", "Corporate Clients"), ("24/7", "Support")],
+    },
+    "air_charter": {
+        "page_title": "Air Charter & Flight Logistics Kenya | Multiscope Travel",
+        "meta_description": "Domestic flight coordination and air charter logistics across Kenya for safaris, executives, groups, and multi-destination programs.",
+        "canonical": "/services/support-services/air-charter-flight-logistics",
+        "breadcrumb_parent": "Travel Support",
+        "breadcrumb_parent_url": "/services/support-services/",
+        "title": "Air & Charter Coordination",
+        "eyebrow": "Domestic flight and charter support",
+        "description": "Flight logistics support for safari circuits, executive movement, remote destinations, and time-sensitive travel programs.",
+        "image": "site_mirror/images/charter-flights-hero.jpg",
+        "learn_title": "Learn More About Air & Charter Coordination",
+        "learn_intro": "We coordinate domestic flight options, charter requests, luggage planning, schedules, transfers, and route sequencing across Kenya.",
+        "features": [
+            {"title": "Scheduled Flights", "description": "Domestic flight coordination for safari airstrips, coast routes, and business cities."},
+            {"title": "Private Charters", "description": "Charter planning for executives, groups, remote projects, and premium safari programs."},
+            {"title": "Transfer Alignment", "description": "Ground transfers matched to flight timing, airstrips, hotels, and lodge check-ins."},
+            {"title": "Luggage Planning", "description": "Guidance on baggage restrictions, aircraft suitability, and practical route design."},
+        ],
+        "process_title": "Our Air Logistics Process",
+        "process": [
+            {"title": "Route Review", "description": "We assess destination, timing, group size, luggage, and access constraints."},
+            {"title": "Flight Options", "description": "We compare scheduled and charter options against the program needs."},
+            {"title": "Coordination", "description": "We align ground transfers, check-in times, airstrip access, and supplier schedules."},
+            {"title": "Travel Support", "description": "We monitor movements and adjust where practical if timing changes."},
+        ],
+        "faqs": [
+            {"question": "What is the difference between scheduled and charter flights?", "answer": "Scheduled flights follow fixed routes and times; charters are private options designed around your itinerary."},
+            {"question": "Can you coordinate multi-destination safari circuits?", "answer": "Yes. We can connect safari airstrips, lodges, and ground transfers."},
+            {"question": "How far ahead should I book?", "answer": "Earlier is better for availability, especially for peak season, groups, and charter requests."},
+        ],
+        "cta_title": "Ready to Plan Your Flight Logistics?",
+        "stats": [("15+", "Flight Partners"), ("30+", "Airstrips"), ("24/7", "Support")],
+    },
+    "travel_documents": {
+        "page_title": "Travel Documents & Visas Kenya | Multiscope Travel",
+        "meta_description": "Kenya travel document support including ETA guidance, visa extension support, permits, insurance coordination, and group applications.",
+        "canonical": "/services/support-services/travel-documents-and-visas",
+        "breadcrumb_parent": "Travel Support",
+        "breadcrumb_parent_url": "/services/support-services/",
+        "title": "Travel Documents & Visas",
+        "eyebrow": "Entry facilitation and documentation support",
+        "description": "Professional assistance with Kenya ETA guidance, visa extensions, permits, travel insurance coordination, and group documentation.",
+        "image": "site_mirror/images/immigration-hero.png",
+        "learn_title": "Learn More About Travel Documents & Visas",
+        "learn_intro": "We help travelers, groups, and corporate teams understand requirements, prepare documents, track timelines, and coordinate entry-related support.",
+        "features": [
+            {"title": "Kenya eTA Guidance", "description": "Practical support on requirements, timing, and documentation for travel authorization."},
+            {"title": "Visa Extensions", "description": "Guidance and coordination support for travelers extending their stay in Kenya."},
+            {"title": "Permit Support", "description": "Coordination for work, resident, or special documentation needs through the right channels."},
+            {"title": "Group Applications", "description": "Organized checklists and tracking for delegations, groups, and event attendees."},
+        ],
+        "process_title": "Our Documentation Process",
+        "process": [
+            {"title": "Requirement Review", "description": "We confirm traveler nationality, itinerary, timelines, and document needs."},
+            {"title": "Checklist Prep", "description": "We prepare a practical list of required documents and next steps."},
+            {"title": "Application Support", "description": "We coordinate submissions, status tracking, and related travel logistics."},
+            {"title": "Travel Ready", "description": "We help align documentation timing with flights, accommodation, and program dates."},
+        ],
+        "faqs": [
+            {"question": "Who needs an eTA for Kenya?", "answer": "Requirements depend on nationality and travel purpose. We help you confirm current practical requirements before travel."},
+            {"question": "Can you help with group applications?", "answer": "Yes. We can organize documentation support for groups and delegations."},
+            {"question": "Do you provide travel insurance?", "answer": "We can coordinate guidance and options through relevant providers where required."},
+        ],
+        "cta_title": "Ready to Prepare Your Travel Documents?",
+        "stats": [("100+", "Applications Supported"), ("24/7", "Travel Support"), ("1", "Clear Checklist")],
+    },
+    "immigration": {
+        "page_title": "Immigration Services Kenya | Multiscope Travel",
+        "meta_description": "Immigration and entry documentation support for Kenya including ETA guidance, visa extensions, permits, and group travel documentation.",
+        "canonical": "/services/immigration-services",
+        "breadcrumb_parent": "Services",
+        "breadcrumb_parent_url": "/services/",
+        "title": "Immigration Services",
+        "eyebrow": "Documentation support for Kenya travel",
+        "description": "Entry facilitation, visa guidance, permits, and travel document coordination for individuals, groups, and corporate teams.",
+        "image": "site_mirror/images/visa-extension-hero.png",
+        "learn_title": "Learn More About Immigration Services",
+        "learn_intro": "We provide practical coordination support for Kenya travel documentation, helping visitors and teams prepare correctly before and during travel.",
+        "features": [
+            {"title": "ETA Guidance", "description": "Support with understanding Kenya entry authorization requirements and timelines."},
+            {"title": "Visa Extension Support", "description": "Guidance for travelers who need to extend their stay in Kenya."},
+            {"title": "Permit Coordination", "description": "Practical support for work, resident, and special permit documentation needs."},
+            {"title": "Group Tracking", "description": "Centralized documentation tracking for delegations, events, and group travel."},
+        ],
+        "process_title": "Our Immigration Support Process",
+        "process": [
+            {"title": "Assess", "description": "We review traveler profiles, purpose of travel, and documentation needs."},
+            {"title": "Prepare", "description": "We help organize requirements, forms, and supporting documents."},
+            {"title": "Coordinate", "description": "We support submission coordination, tracking, and practical travel alignment."},
+            {"title": "Confirm", "description": "We help ensure the travel plan matches documentation timelines."},
+        ],
+        "faqs": [
+            {"question": "Do you replace official immigration authorities?", "answer": "No. We provide coordination and guidance; final decisions remain with the relevant authorities."},
+            {"question": "Can you help corporate groups?", "answer": "Yes. We can organize documentation checklists and tracking for groups and delegations."},
+            {"question": "Can you assist with extensions?", "answer": "Yes. We can guide travelers through practical extension requirements and timing."},
+        ],
+        "cta_title": "Ready to Organize Your Travel Documents?",
+        "stats": [("100+", "Travelers Supported"), ("24/7", "Guidance"), ("1", "Organized Process")],
+    },
+}
+
+
+def _service_detail_context(page_key: str) -> dict:
+    return {"service_page": SERVICE_DETAIL_PAGES[page_key]}
+
+
 def _page_path(slug: str) -> Path:
     clean_slug = slug.strip("/")
     filename = "index.html" if not clean_slug else f"{clean_slug.replace('/', '__')}.html"
@@ -257,4 +516,58 @@ def services_tours_safaris_view(request):
 def services_support_services_view(request):
     return render(request, "pages/services_support_services.html")
 
-# Create your views here.
+
+def contact_view(request):
+    return render(request, "pages/contact.html")
+
+
+def blog_view(request):
+    return render(request, "pages/blog.html", {"posts": STATIC_BLOG_POSTS})
+
+
+def experiences_view(request):
+    return render(request, "pages/experiences.html", {"experiences": STATIC_EXPERIENCES})
+
+
+def travel_agents_view(request):
+    return render(request, "pages/travel_agents.html")
+
+
+def faq_view(request):
+    return render(request, "pages/faq.html")
+
+
+def terms_view(request):
+    return render(request, "pages/legal.html", {"legal_page": "terms"})
+
+
+def privacy_view(request):
+    return render(request, "pages/legal.html", {"legal_page": "privacy"})
+
+
+def unsubscribe_view(request):
+    return render(request, "pages/unsubscribe.html")
+
+
+def services_tours_safaris_inbound_view(request):
+    return render(request, "pages/service_detail.html", _service_detail_context("inbound_safaris"))
+
+
+def services_tours_safaris_tembea_view(request):
+    return render(request, "pages/service_detail.html", _service_detail_context("tembea_kenya"))
+
+
+def services_support_ground_transport_view(request):
+    return render(request, "pages/service_detail.html", _service_detail_context("ground_transport"))
+
+
+def services_support_air_charter_view(request):
+    return render(request, "pages/service_detail.html", _service_detail_context("air_charter"))
+
+
+def services_support_travel_documents_view(request):
+    return render(request, "pages/service_detail.html", _service_detail_context("travel_documents"))
+
+
+def services_immigration_view(request):
+    return render(request, "pages/service_detail.html", _service_detail_context("immigration"))

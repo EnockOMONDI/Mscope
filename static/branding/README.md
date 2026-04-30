@@ -1,4 +1,4 @@
-Brand-specific static assets for Come Travel Kenya templates.
+Brand-specific static assets for Multiscope Travel templates.
 
 Use this folder for:
 - logos

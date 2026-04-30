@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block page_head %}
+  <title>Unsubscribe | Multiscope Travel</title>
+  <meta name="description" content="Unsubscribe from Multiscope Travel newsletter updates." />
+{% endblock %}
+
+{% block page_content %}
+<main class="premium-page text-gray-900">
+  <section class="premium-section bg-white">
+    <div class="premium-container">
+      <form action="/lead/submit/" method="post" class="premium-card premium-reveal mx-auto max-w-2xl p-8 md:p-12">
+        {% csrf_token %}
+        <input type="hidden" name="inquiry_type" value="unsubscribe" />
+        <input type="hidden" name="source_path" value="/unsubscribe" />
+        <p class="premium-eyebrow">Email Preferences</p>
+        <h1 class="premium-heading mt-4 text-4xl md:text-5xl">Unsubscribe</h1>
+        <p class="mt-6 leading-8 text-gray-600">Enter your email and we’ll remove it from newsletter updates. You can still contact us directly for active travel inquiries.</p>
+        <label class="mt-8 block text-sm font-bold text-[#011a1f]">Email Address<input name="email" type="email" required class="mt-2 w-full rounded-xl border border-gray-200 px-4 py-3 outline-none focus:border-[#ffa119]" /></label>
+        <button class="premium-button-primary mt-7" type="submit">Unsubscribe</button>
+      </form>
+    </div>
+  </section>
+</main>
+{% endblock %}
