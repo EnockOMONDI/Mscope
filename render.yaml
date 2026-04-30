@@ -17,7 +17,7 @@ services:
       - key: ALLOWED_HOSTS
         value: multiscope-travel.onrender.com,multiscopetravel.com,www.multiscopetravel.com
       - key: CSRF_TRUSTED_ORIGINS
-        value: https://multiscope-travel.onrender.com,https://multiscopetravel.com,https://www.multiscopetravel.com
+        value: https://mscope.onrender.com,https://multiscopetravel.com,https://www.multiscopetravel.com
       - key: TIME_ZONE
         value: Africa/Nairobi
       - key: SECURE_SSL_REDIRECT
