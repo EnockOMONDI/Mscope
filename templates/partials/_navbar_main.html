@@ -1,0 +1,78 @@
+{% load static %}
+<nav class="sticky top-0 z-50 shadow-lg">
+  <div class="bg-gradient-to-r from-[#011a1f] to-[#0a2a30] text-white">
+    <div class="container mx-auto px-4 md:px-8 lg:px-12">
+      <div class="flex items-center justify-between py-3 md:py-4">
+        <a aria-label="Multiscope Travel - Home" class="flex items-center" href="/">
+          <img alt="Multiscope Travel Logo" class="h-14 md:h-16 w-auto object-contain" src="{% static 'images/multiscope-travel-logo.png' %}" />
+        </a>
+
+        <div class="hidden lg:flex items-center gap-8 ml-auto">
+          <div class="flex items-center gap-6">
+            <div class="nav-dropdown relative">
+              <a class="text-[15px] font-medium hover:text-white/90 inline-flex items-center gap-1 py-4" href="/services/mice">
+                MICE &amp; Business Travel <span class="text-white/70">⌄</span>
+              </a>
+              <div class="nav-dropdown-menu absolute left-0 top-full z-[60] hidden min-w-[540px] rounded-2xl bg-white p-3 text-[#011a1f] shadow-2xl ring-1 ring-black/5">
+                <a class="block rounded-xl px-4 py-3 text-sm font-semibold hover:bg-[#011a1f]/5" href="/services/mice">MICE Overview</a>
+                <a class="block rounded-xl px-4 py-3 text-sm font-semibold hover:bg-[#011a1f]/5" href="/services/mice/meetings">Corporate Meetings</a>
+                <a class="block rounded-xl px-4 py-3 text-sm font-semibold hover:bg-[#011a1f]/5" href="/services/mice/incentive-travel">Incentive Travel</a>
+                <a class="block rounded-xl px-4 py-3 text-sm font-semibold hover:bg-[#011a1f]/5" href="/services/mice/conferences">Conferences</a>
+                <a class="block rounded-xl px-4 py-3 text-sm font-semibold hover:bg-[#011a1f]/5" href="/services/mice/events-exhibitions">Events &amp; Exhibitions</a>
+              </div>
+            </div>
+
+            <div class="nav-dropdown relative">
+              <a class="text-[15px] font-medium hover:text-white/90 inline-flex items-center gap-1 py-4" href="/services/tours-safaris">
+                Experiential Safaris <span class="text-white/70">⌄</span>
+              </a>
+              <div class="nav-dropdown-menu absolute left-0 top-full z-[60] hidden min-w-[320px] rounded-2xl bg-white p-3 text-[#011a1f] shadow-2xl ring-1 ring-black/5">
+                <a class="block rounded-xl px-4 py-3 text-sm font-semibold hover:bg-[#011a1f]/5" href="/services/tours-safaris">Safaris Overview</a>
+                <a class="block rounded-xl px-4 py-3 text-sm font-semibold hover:bg-[#011a1f]/5" href="/services/tours-safaris/inbound-safaris">Inbound Safaris</a>
+                <a class="block rounded-xl px-4 py-3 text-sm font-semibold hover:bg-[#011a1f]/5" href="/services/tours-safaris/tembea-kenya">Tembea Kenya</a>
+                <a class="block rounded-xl px-4 py-3 text-sm font-semibold hover:bg-[#011a1f]/5" href="/experiences">All Experiences</a>
+              </div>
+            </div>
+
+            <div class="nav-dropdown relative">
+              <a class="text-[15px] font-medium hover:text-white/90 inline-flex items-center gap-1 py-4" href="/services/support-services">
+                Travel Support <span class="text-white/70">⌄</span>
+              </a>
+              <div class="nav-dropdown-menu absolute left-0 top-full z-[60] hidden min-w-[360px] rounded-2xl bg-white p-3 text-[#011a1f] shadow-2xl ring-1 ring-black/5">
+                <a class="block rounded-xl px-4 py-3 text-sm font-semibold hover:bg-[#011a1f]/5" href="/services/support-services">Support Overview</a>
+                <a class="block rounded-xl px-4 py-3 text-sm font-semibold hover:bg-[#011a1f]/5" href="/services/support-services/ground-transport-logistics">Ground Transport &amp; Logistics</a>
+                <a class="block rounded-xl px-4 py-3 text-sm font-semibold hover:bg-[#011a1f]/5" href="/services/support-services/air-charter-flight-logistics">Air Charter &amp; Flight Logistics</a>
+                <a class="block rounded-xl px-4 py-3 text-sm font-semibold hover:bg-[#011a1f]/5" href="/services/support-services/travel-documents-and-visas">Travel Documents &amp; Visas</a>
+              </div>
+            </div>
+
+            <a class="text-[15px] font-medium hover:text-white/90 py-4" href="/experiences">Experiences</a>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <a class="px-5 py-3 bg-gradient-to-r from-[#ffa119] to-[#ff8c00] text-white font-bold rounded-xl shadow-md hover:shadow-lg transition-all inline-flex items-center gap-2 text-[15px]" href="/travel-agents">
+              <svg aria-hidden="true" class="w-4 h-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m11 17 2 2a1 1 0 1 0 3-3"></path><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"></path><path d="m21 3 1 11h-2"></path><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"></path><path d="M3 4h8"></path></svg>
+              PARTNER
+            </a>
+            <a class="px-5 py-3 bg-gradient-to-r from-[#d75128] to-[#ffa119] text-white font-bold rounded-xl shadow-md hover:shadow-lg transition-all text-[15px]" href="/contact">GET A QUOTE</a>
+          </div>
+        </div>
+
+        <details class="lg:hidden relative">
+          <summary aria-label="Open menu" class="list-none text-white p-2 hover:bg-white/10 rounded-lg transition-colors cursor-pointer">
+            <svg aria-hidden="true" class="w-6 h-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+          </summary>
+          <div class="absolute right-0 top-full z-[60] mt-3 w-[85vw] max-w-sm rounded-2xl bg-white p-4 text-[#011a1f] shadow-2xl">
+            <a class="block rounded-xl px-4 py-3 font-semibold hover:bg-[#011a1f]/5" href="/services">Services</a>
+            <a class="block rounded-xl px-4 py-3 font-semibold hover:bg-[#011a1f]/5" href="/services/mice">MICE &amp; Business Travel</a>
+            <a class="block rounded-xl px-4 py-3 font-semibold hover:bg-[#011a1f]/5" href="/services/tours-safaris">Experiential Safaris</a>
+            <a class="block rounded-xl px-4 py-3 font-semibold hover:bg-[#011a1f]/5" href="/services/support-services">Travel Support</a>
+            <a class="block rounded-xl px-4 py-3 font-semibold hover:bg-[#011a1f]/5" href="/experiences">Experiences</a>
+            <a class="block rounded-xl px-4 py-3 font-semibold hover:bg-[#011a1f]/5" href="/travel-agents">Partner</a>
+            <a class="mt-2 block rounded-xl bg-gradient-to-r from-[#d75128] to-[#ffa119] px-4 py-3 text-center font-bold text-white" href="/contact">Get a Quote</a>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</nav>
