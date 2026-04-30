@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: multiscope-travel
+    name: Mscope
     env: python
     plan: starter
     buildCommand: |
