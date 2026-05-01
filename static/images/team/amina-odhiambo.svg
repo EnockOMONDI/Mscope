@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title desc">
+  <title id="title">Amina Odhiambo portrait</title>
+  <desc id="desc">Stylized professional African woman portrait for Multiscope Travel.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#011a1f"/>
+      <stop offset="1" stop-color="#164650"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d75128"/>
+      <stop offset="1" stop-color="#ffa119"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="640" fill="url(#bg)"/>
+  <circle cx="510" cy="92" r="96" fill="#ffa119" opacity=".12"/>
+  <circle cx="116" cy="538" r="140" fill="#d75128" opacity=".1"/>
+  <path d="M162 602c24-116 91-174 158-174s134 58 158 174H162Z" fill="#f7f9f8"/>
+  <path d="M203 594c18-72 62-112 117-112s99 40 117 112H203Z" fill="url(#accent)"/>
+  <circle cx="320" cy="285" r="112" fill="#8f4f34"/>
+  <path d="M215 287c-50-92 13-193 105-193 93 0 157 101 105 193-21-54-58-86-105-86s-84 32-105 86Z" fill="#17130f"/>
+  <path d="M215 285c-16 7-25 25-20 43 5 19 23 29 40 25l-20-68Zm210 0 20 68c17 4 35-6 40-25 5-18-4-36-20-43l-40 0Z" fill="#8f4f34"/>
+  <path d="M247 332c24 45 60 68 73 68s49-23 73-68c-25 17-50 25-73 25s-48-8-73-25Z" fill="#7d432c" opacity=".5"/>
+  <path d="M286 337c20 14 48 14 68 0" fill="none" stroke="#2a1510" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="276" cy="284" r="8" fill="#1a0e0b"/>
+  <circle cx="364" cy="284" r="8" fill="#1a0e0b"/>
+  <path d="M300 316c12 8 28 8 40 0" fill="none" stroke="#6d3824" stroke-width="8" stroke-linecap="round"/>
+  <path d="M220 234c36-76 164-82 204 0-10-88-62-142-104-142s-91 54-100 142Z" fill="#221711"/>
+  <circle cx="210" cy="214" r="34" fill="#221711"/>
+  <circle cx="430" cy="214" r="34" fill="#221711"/>
+  <path d="M190 602h260l-58-86c-43 37-101 37-144 0l-58 86Z" fill="#ffffff" opacity=".92"/>
+</svg>

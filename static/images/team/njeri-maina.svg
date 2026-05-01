@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title desc">
+  <title id="title">Njeri Maina portrait</title>
+  <desc id="desc">Stylized professional African woman portrait for Multiscope Travel.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#011a1f"/>
+      <stop offset="1" stop-color="#153f46"/>
+    </linearGradient>
+    <linearGradient id="scarf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d75128"/>
+      <stop offset="1" stop-color="#ffa119"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="640" fill="url(#bg)"/>
+  <rect x="92" y="90" width="456" height="456" rx="90" fill="#fff" opacity=".06"/>
+  <path d="M154 604c24-120 91-180 166-180s142 60 166 180H154Z" fill="#f8fafc"/>
+  <path d="M212 604c13-72 55-118 108-118s95 46 108 118H212Z" fill="url(#scarf)"/>
+  <circle cx="320" cy="286" r="112" fill="#87513a"/>
+  <path d="M210 296c-45-106 20-200 110-200s155 94 110 200c-16-58-51-91-110-91s-94 33-110 91Z" fill="#140f0c"/>
+  <circle cx="221" cy="220" r="32" fill="#140f0c"/>
+  <circle cx="419" cy="220" r="32" fill="#140f0c"/>
+  <path d="M216 288c-17 6-27 24-22 43s23 29 40 24l-18-67Zm208 0 18 67c17 5 35-5 40-24s-5-37-22-43h-36Z" fill="#87513a"/>
+  <circle cx="278" cy="286" r="8" fill="#120a07"/>
+  <circle cx="362" cy="286" r="8" fill="#120a07"/>
+  <path d="M300 318c12 9 28 9 40 0" fill="none" stroke="#6c3a28" stroke-width="8" stroke-linecap="round"/>
+  <path d="M286 348c22 17 46 17 68 0" fill="none" stroke="#1a0f0b" stroke-width="10" stroke-linecap="round"/>
+  <path d="M224 232c48-49 144-49 192 0-14-78-54-128-96-128s-82 50-96 128Z" fill="#21150f"/>
+  <path d="M204 604h232l-52-82c-39 33-89 33-128 0l-52 82Z" fill="#fff"/>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title desc">
+  <title id="title">Kevin Mutua portrait</title>
+  <desc id="desc">Stylized professional African man portrait for Multiscope Travel.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f343b"/>
+      <stop offset="1" stop-color="#011a1f"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffa119"/>
+      <stop offset="1" stop-color="#d75128"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="640" fill="url(#bg)"/>
+  <path d="M52 468c112 86 224 100 336 43 73-37 123-92 150-163" fill="none" stroke="#ffa119" stroke-width="28" opacity=".13" stroke-linecap="round"/>
+  <path d="M158 604c24-119 88-178 162-178s138 59 162 178H158Z" fill="#f8fafc"/>
+  <path d="M214 604c11-70 52-116 106-116s95 46 106 116H214Z" fill="#102c34"/>
+  <rect x="286" y="486" width="68" height="118" rx="28" fill="url(#accent)"/>
+  <circle cx="320" cy="286" r="112" fill="#80503a"/>
+  <path d="M216 271c-12-111 47-174 104-174s116 63 104 174c-34-56-174-56-208 0Z" fill="#15110e"/>
+  <path d="M216 288c-18 6-29 25-23 43 5 18 24 28 41 22l-18-65Zm208 0 18 65c17 6 36-4 41-22 6-18-5-37-23-43h-36Z" fill="#80503a"/>
+  <circle cx="278" cy="288" r="8" fill="#130b08"/>
+  <circle cx="362" cy="288" r="8" fill="#130b08"/>
+  <path d="M301 318c12 8 26 8 38 0" fill="none" stroke="#693e2b" stroke-width="8" stroke-linecap="round"/>
+  <path d="M286 350c21 15 47 15 68 0" fill="none" stroke="#1b0f0b" stroke-width="10" stroke-linecap="round"/>
+  <path d="M230 218c26-82 154-88 182 0-56-34-123-34-182 0Z" fill="#1b1511"/>
+  <path d="M210 604h220l-47-78c-39 31-87 31-126 0l-47 78Z" fill="#ffffff"/>
+</svg>

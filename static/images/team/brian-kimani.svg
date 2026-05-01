@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title desc">
+  <title id="title">Brian Kimani portrait</title>
+  <desc id="desc">Stylized professional African man portrait for Multiscope Travel.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#082b32"/>
+      <stop offset="1" stop-color="#011a1f"/>
+    </linearGradient>
+    <linearGradient id="tie" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffa119"/>
+      <stop offset="1" stop-color="#d75128"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="640" fill="url(#bg)"/>
+  <path d="M76 156c96-84 230-104 350-54 74 30 118 82 138 140" fill="none" stroke="#ffa119" stroke-width="26" opacity=".16" stroke-linecap="round"/>
+  <path d="M146 604c23-122 91-184 174-184s151 62 174 184H146Z" fill="#f7f9f8"/>
+  <path d="M204 604c12-70 57-118 116-118s104 48 116 118H204Z" fill="#102c34"/>
+  <path d="M294 492h52l-20 112h-12l-20-112Z" fill="url(#tie)"/>
+  <circle cx="320" cy="286" r="116" fill="#74422e"/>
+  <path d="M216 263c-4-100 56-160 104-160s108 60 104 160c-22-44-55-64-104-64s-82 20-104 64Z" fill="#100d0b"/>
+  <path d="M219 289c-17 6-27 24-22 43 5 18 22 28 39 24l-17-67Zm202 0 17 67c17 4 34-6 39-24 5-19-5-37-22-43h-34Z" fill="#74422e"/>
+  <circle cx="278" cy="287" r="8" fill="#0f0907"/>
+  <circle cx="362" cy="287" r="8" fill="#0f0907"/>
+  <path d="M300 318c12 8 28 8 40 0" fill="none" stroke="#5a2f20" stroke-width="8" stroke-linecap="round"/>
+  <path d="M286 350c22 17 46 17 68 0" fill="none" stroke="#1d0f0b" stroke-width="10" stroke-linecap="round"/>
+  <path d="M220 227c30-96 178-98 200 2-34-28-71-42-110-42-36 0-66 13-90 40Z" fill="#17110e"/>
+  <path d="M200 604h240l-54-82c-41 33-91 33-132 0l-54 82Z" fill="#ffffff"/>
+</svg>
