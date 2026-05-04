@@ -673,6 +673,10 @@ def faq_view(request):
     return render(request, "pages/faq.html")
 
 
+def verify_view(request):
+    return render(request, "pages/verify.html")
+
+
 def terms_view(request):
     return render(request, "pages/legal.html", {"legal_page": "terms"})
 

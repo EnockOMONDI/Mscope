@@ -46,6 +46,7 @@ from core.views import (
     terms_view,
     travel_agents_view,
     unsubscribe_view,
+    verify_view,
 )
 from leads.views import submit_inquiry
 
@@ -59,6 +60,9 @@ urlpatterns = [
     path('experiences/', experiences_view, name='experiences'),
     path('travel-agents/', travel_agents_view, name='travel_agents'),
     path('faq/', faq_view, name='faq'),
+    path('verify/', verify_view, name='verify'),
+    path('official-channels/', verify_view, name='official_channels'),
+    path('payment-details/', verify_view, name='payment_details'),
     path('terms-and-conditions/', terms_view, name='terms'),
     path('privacy-policy/', privacy_view, name='privacy'),
     path('unsubscribe/', unsubscribe_view, name='unsubscribe'),
