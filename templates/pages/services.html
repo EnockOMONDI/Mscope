@@ -2,8 +2,8 @@
 {% load static %}
 
 {% block page_head %}
-  <title>Kenya Travel Services | Multiscope Travel</title>
-  <meta name="description" content="Multiscope Travel services across Kenya: MICE, safaris, ground transport, flight logistics, travel documents, and corporate travel support." />
+  <title>Corporate Solutions Kenya | Multiscope Travel Management &amp; MICE Logistics</title>
+  <meta name="description" content="Corporate travel management solutions in Kenya: managed travel, technology tools, duty of care, travel analytics, strategic management, MICE logistics, and incentive experiences." />
   <link rel="canonical" href="/services/" />
 {% endblock %}
 
@@ -16,12 +16,12 @@
     </div>
     <div class="premium-container premium-mice-hero-inner relative">
       <div class="premium-hero-copy-wide premium-mice-hero-copy premium-reveal premium-reveal-left">
-        <p class="premium-mice-hero-pill inline-flex rounded-full bg-white/10 px-5 py-2 text-sm font-bold text-[#ffa119] ring-1 ring-white/15">All Services</p>
-        <h1 class="text-4xl font-extrabold leading-tight tracking-[-0.045em] md:text-6xl lg:text-7xl">Travel Services Built for Kenya</h1>
-        <p class="premium-mice-hero-text max-w-3xl text-lg text-white/80 md:text-xl">Corporate travel, MICE programs, safaris, logistics, and travel documentation support managed through one reliable local team.</p>
+        <p class="premium-mice-hero-pill inline-flex rounded-full bg-white/10 px-5 py-2 text-sm font-bold text-[#ffa119] ring-1 ring-white/15">Corporate Solutions</p>
+        <h1 class="text-4xl font-extrabold leading-tight tracking-[-0.045em] md:text-6xl lg:text-7xl">Managed travel for organizations that need control</h1>
+        <p class="premium-mice-hero-text max-w-3xl text-lg text-white/80 md:text-xl">Corporate travel management, technology workflows, duty of care, analytics, strategic advisory, MICE logistics, and incentive experiences delivered by one accountable Kenya-based team.</p>
         <div class="premium-mice-hero-actions flex flex-col sm:flex-row">
-          <a class="premium-button-primary" href="/contact/">Request Quote</a>
-          <a class="premium-button-secondary" href="#mice">Explore Services</a>
+          <a class="premium-button-primary" href="/contact/">Request Corporate Support</a>
+          <a class="premium-button-secondary" href="#corporate">Explore Solutions</a>
         </div>
       </div>
     </div>
@@ -30,28 +30,73 @@
   <section class="premium-anchor-nav premium-pill-nav shadow-sm">
     <div class="premium-container">
       <div class="flex gap-3 overflow-x-auto py-4">
-        <a class="premium-tab premium-tab-active" href="#mice">MICE</a>
-        <a class="premium-tab" href="#experiential">Experiential</a>
-        <a class="premium-tab" href="#support">Support</a>
+        <a class="premium-tab premium-tab-active" href="#corporate">Managed Travel</a>
+        <a class="premium-tab" href="#platform">Platform</a>
+        <a class="premium-tab" href="#mice">MICE</a>
+        <a class="premium-tab" href="#safaris">Incentive Experiences</a>
+        <a class="premium-tab" href="#support">Travel Support</a>
         <a class="premium-tab" href="#why">Why Us</a>
       </div>
     </div>
   </section>
 
-  <section id="mice" class="premium-anchor-target bg-white premium-section">
+  <section id="corporate" class="premium-anchor-target bg-white premium-section">
     <div class="premium-container">
       <div class="premium-reveal mb-12 max-w-4xl">
-        <p class="premium-eyebrow">MICE & Business Travel</p>
-        <h2 class="premium-heading mt-4 text-3xl md:text-5xl">Corporate events and business travel across Kenya</h2>
-        <p class="mt-5 text-lg leading-8 text-gray-600">Complete event management for meetings, incentives, conferences, exhibitions, retreats, delegation travel, and on-ground corporate support.</p>
+        <p class="premium-eyebrow">Managed Travel</p>
+        <h2 class="premium-heading mt-4 text-3xl md:text-5xl">Business travel management for teams, executives, NGOs, and delegations</h2>
+        <p class="mt-5 text-lg leading-8 text-gray-600">Air ticketing, hotels, travel documents, insurance, meet-and-assist, airport transfers, car hires, buses, approvals, traveller support, and reporting managed through one desk.</p>
+      </div>
+      <div class="grid gap-8 lg:grid-cols-[1.05fr_1.4fr]">
+        <a class="premium-card premium-solution-card premium-reveal" href="/services/corporate-travel/">
+          <img src="{% static 'site_mirror/images/transport-hero.png' %}" alt="Corporate travel management" class="h-80 w-full object-cover" />
+          <div class="premium-card-body">
+            <p class="text-sm font-bold uppercase tracking-wider text-[#d75128]">Business travel desk</p>
+            <h3 class="mt-2 text-2xl font-bold text-[#011a1f]">Corporate Travel Management</h3>
+            <p class="mt-4 leading-7 text-gray-600">Flights, hotels, documents, transfers, insurance, traveller support, approvals, and records for companies, NGOs, and delegations.</p>
+            <span class="premium-card-link inline-flex font-bold text-[#d75128]">View Details</span>
+          </div>
+        </a>
+        <div class="grid gap-6 md:grid-cols-2">
+          <a class="premium-card premium-text-card premium-reveal premium-delay-1" href="/services/technology-tools/"><h3 class="text-xl font-bold text-[#011a1f]">Technology &amp; Tools</h3><p class="text-gray-600">Booking workflows, traveller profiles, approvals, and policy controls.</p><span class="premium-card-link inline-flex font-bold text-[#d75128]">Learn More</span></a>
+          <a class="premium-card premium-text-card premium-reveal premium-delay-2" href="/services/risk-management-duty-of-care/"><h3 class="text-xl font-bold text-[#011a1f]">Risk &amp; Duty of Care</h3><p class="text-gray-600">Traveller tracking, emergency support, escalation, and risk-aware itineraries.</p><span class="premium-card-link inline-flex font-bold text-[#d75128]">Learn More</span></a>
+          <a class="premium-card premium-text-card premium-reveal premium-delay-3" href="/services/travel-analytics-reporting/"><h3 class="text-xl font-bold text-[#011a1f]">Analytics &amp; Reporting</h3><p class="text-gray-600">Spend reporting, savings insights, supplier performance, and compliance.</p><span class="premium-card-link inline-flex font-bold text-[#d75128]">Learn More</span></a>
+          <a class="premium-card premium-text-card premium-reveal premium-delay-4" href="/services/strategic-travel-management/"><h3 class="text-xl font-bold text-[#011a1f]">Strategic Management</h3><p class="text-gray-600">Policy development, supplier negotiation, corporate rates, and ESG reporting.</p><span class="premium-card-link inline-flex font-bold text-[#d75128]">Learn More</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="platform" class="premium-anchor-target premium-section">
+    <div class="premium-container">
+      <div class="premium-reveal mx-auto mb-12 max-w-4xl text-center">
+        <p class="premium-eyebrow justify-center">Platform Capabilities</p>
+        <h2 class="premium-heading mt-4 text-3xl md:text-5xl">From package selling to managed travel systems</h2>
+        <p class="mt-5 text-lg leading-8 text-gray-600">Corporate buyers need workflows, visibility, and risk controls. These capabilities position Multiscope as a Travel Management Company partner, not just a tour operator.</p>
+      </div>
+      <div class="grid gap-7 md:grid-cols-2 lg:grid-cols-4">
+        <a class="premium-card premium-text-card premium-reveal" href="/services/technology-tools/"><div class="premium-feature-icon">01</div><h3 class="text-xl font-bold text-[#011a1f]">Technology &amp; Tools</h3><p class="text-gray-600">Online booking tool readiness, approval routing, and travel policy workflows.</p><span class="premium-card-link inline-flex font-bold text-[#d75128]">View Page</span></a>
+        <a class="premium-card premium-text-card premium-reveal premium-delay-1" href="/services/risk-management-duty-of-care/"><div class="premium-feature-icon">02</div><h3 class="text-xl font-bold text-[#011a1f]">Duty of Care</h3><p class="text-gray-600">Traveller tracking, emergency support, escalation notes, and safer movement planning.</p><span class="premium-card-link inline-flex font-bold text-[#d75128]">View Page</span></a>
+        <a class="premium-card premium-text-card premium-reveal premium-delay-2" href="/services/travel-analytics-reporting/"><div class="premium-feature-icon">03</div><h3 class="text-xl font-bold text-[#011a1f]">Travel Analytics</h3><p class="text-gray-600">Dashboards for spend, savings, supplier performance, and policy compliance.</p><span class="premium-card-link inline-flex font-bold text-[#d75128]">View Page</span></a>
+        <a class="premium-card premium-text-card premium-reveal premium-delay-3" href="/services/strategic-travel-management/"><div class="premium-feature-icon">04</div><h3 class="text-xl font-bold text-[#011a1f]">Strategic Management</h3><p class="text-gray-600">Travel policy, supplier negotiation, corporate rates, and sustainability reporting.</p><span class="premium-card-link inline-flex font-bold text-[#d75128]">View Page</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="mice" class="premium-anchor-target premium-section">
+    <div class="premium-container">
+      <div class="premium-reveal mb-12 max-w-4xl">
+        <p class="premium-eyebrow">MICE</p>
+        <h2 class="premium-heading mt-4 text-3xl md:text-5xl">Meetings, incentives, conferences, and exhibitions</h2>
+        <p class="mt-5 text-lg leading-8 text-gray-600">Venue sourcing, delegate logistics, registration, transport, accommodation, AV, supplier control, and on-ground event coordination.</p>
       </div>
       <div class="grid gap-8 lg:grid-cols-[1.05fr_1.4fr]">
         <a class="premium-card premium-solution-card premium-reveal" href="/services/mice/">
-          <img src="{% static 'site_mirror/images/mice-hero.webp' %}" alt="MICE and business travel" class="h-80 w-full object-cover" />
+          <img src="{% static 'site_mirror/images/mice-hero.webp' %}" alt="MICE services in Kenya" class="h-80 w-full object-cover" />
           <div class="premium-card-body">
             <p class="text-sm font-bold uppercase tracking-wider text-[#d75128]">End-to-end coordination</p>
-            <h3 class="mt-2 text-2xl font-bold text-[#011a1f]">MICE & Business Travel</h3>
-            <p class="mt-4 leading-7 text-gray-600">Complete event management for meetings, conferences, incentives, exhibitions, and hosted business travel.</p>
+            <h3 class="mt-2 text-2xl font-bold text-[#011a1f]">MICE Services</h3>
+            <p class="mt-4 leading-7 text-gray-600">Complete event management for meetings, conferences, incentives, exhibitions, and destination-led programs.</p>
             <span class="premium-card-link inline-flex font-bold text-[#d75128]">View Details</span>
           </div>
         </a>
@@ -81,20 +126,20 @@
     </div>
   </section>
 
-  <section id="experiential" class="premium-anchor-target premium-section">
+  <section id="safaris" class="premium-anchor-target bg-white premium-section">
     <div class="premium-container">
       <div class="premium-reveal mx-auto mb-12 max-w-4xl text-center">
-        <p class="premium-eyebrow justify-center">Experiential Safaris</p>
-        <h2 class="premium-heading mt-4 text-3xl md:text-5xl">Safari and local Kenya experiences</h2>
-        <p class="mt-5 text-lg leading-8 text-gray-600">Inbound safaris, Tembea Kenya trips, local escapes, and destination experiences designed with practical ground handling.</p>
+        <p class="premium-eyebrow justify-center">Incentive Experiences</p>
+        <h2 class="premium-heading mt-4 text-3xl md:text-5xl">Safaris, retreats, and local Kenya experiences for corporate programs</h2>
+        <p class="mt-5 text-lg leading-8 text-gray-600">Inbound safaris, Tembea Kenya trips, local escapes, post-conference leisure, executive retreats, and incentive experiences designed with practical ground handling.</p>
       </div>
       <div class="grid gap-8 md:grid-cols-2">
         <a class="premium-card premium-solution-card premium-reveal premium-delay-1" href="/services/tours-safaris/tembea-kenya/">
           <img src="{% static 'site_mirror/images/tembea-kenya-hero.png' %}" alt="Tembea Kenya Tours" class="h-80 w-full object-cover" />
           <div class="premium-card-body">
             <p class="text-sm font-bold uppercase tracking-wider text-[#d75128]">Local travel</p>
-            <h3 class="mt-2 text-2xl font-bold text-[#011a1f]">Tembea Kenya Tours</h3>
-            <p class="mt-4 leading-7 text-gray-600">Local getaways, coast escapes, highland trips, and short safaris for residents, expats, and teams.</p>
+            <h3 class="mt-2 text-2xl font-bold text-[#011a1f]">Team Retreats &amp; Local Experiences</h3>
+            <p class="mt-4 leading-7 text-gray-600">Local getaways, coast escapes, highland trips, team-building, and short safaris for staff groups and leadership teams.</p>
             <span class="premium-card-link inline-flex font-bold text-[#d75128]">Learn More</span>
           </div>
         </a>
@@ -102,8 +147,8 @@
           <img src="{% static 'site_mirror/images/inbound-safari-hero.png' %}" alt="Inbound Safaris" class="h-80 w-full object-cover" />
           <div class="premium-card-body">
             <p class="text-sm font-bold uppercase tracking-wider text-[#d75128]">International guests</p>
-            <h3 class="mt-2 text-2xl font-bold text-[#011a1f]">Inbound Safaris</h3>
-            <p class="mt-4 leading-7 text-gray-600">Wildlife circuits, lodges, transfers, domestic flights, and beach extensions for Kenya-bound visitors.</p>
+            <h3 class="mt-2 text-2xl font-bold text-[#011a1f]">Corporate Incentive Safaris</h3>
+            <p class="mt-4 leading-7 text-gray-600">Wildlife circuits, lodges, transfers, domestic flights, and beach extensions for reward trips, delegations, and executive guests.</p>
             <span class="premium-card-link inline-flex font-bold text-[#d75128]">Learn More</span>
           </div>
         </a>
@@ -111,12 +156,12 @@
     </div>
   </section>
 
-  <section id="support" class="premium-anchor-target bg-white premium-section">
+  <section id="support" class="premium-anchor-target premium-section">
     <div class="premium-container">
       <div class="premium-reveal mx-auto mb-12 max-w-4xl text-center">
-        <p class="premium-eyebrow justify-center">Travel Support</p>
-        <h2 class="premium-heading mt-4 text-3xl md:text-5xl">Transport, flights, and documentation</h2>
-        <p class="mt-5 text-lg leading-8 text-gray-600">Reliable logistics for safaris, corporate programs, events, delegations, and independent travel.</p>
+        <p class="premium-eyebrow justify-center">Managed Travel Support</p>
+        <h2 class="premium-heading mt-4 text-3xl md:text-5xl">Transport, flights, documentation, and on-ground control</h2>
+        <p class="mt-5 text-lg leading-8 text-gray-600">Reliable logistics for business travel, MICE programs, delegations, executive movement, safaris, and independent travel.</p>
       </div>
       <div class="grid gap-8 lg:grid-cols-3">
         <a class="premium-card premium-solution-card premium-reveal premium-delay-1" href="/services/support-services/ground-transport-logistics/">
@@ -150,15 +195,15 @@
   <section id="why" class="premium-anchor-target bg-[#011a1f] py-20 text-white">
     <div class="premium-container">
       <div class="grid gap-7 md:grid-cols-4">
-        <div class="premium-stat-card premium-reveal premium-delay-1 rounded-3xl p-8 text-center"><p class="text-4xl font-bold text-[#ffa119]">15+</p><p class="mt-2 text-white/75">Services Offered</p></div>
-        <div class="premium-stat-card premium-reveal premium-delay-2 rounded-3xl p-8 text-center"><p class="text-4xl font-bold text-[#ffa119]">200+</p><p class="mt-2 text-white/75">Corporate Clients</p></div>
-        <div class="premium-stat-card premium-reveal premium-delay-3 rounded-3xl p-8 text-center"><p class="text-4xl font-bold text-[#ffa119]">24/7</p><p class="mt-2 text-white/75">Travel Support</p></div>
-        <div class="premium-stat-card premium-reveal premium-delay-4 rounded-3xl p-8 text-center"><p class="text-4xl font-bold text-[#ffa119]">98%</p><p class="mt-2 text-white/75">Success Rate</p></div>
+        <div class="premium-stat-card premium-reveal premium-delay-1 rounded-3xl p-8 text-center"><p class="text-4xl font-bold text-[#ffa119]">24/7</p><p class="mt-2 text-white/75">Emergency Escalation</p></div>
+        <div class="premium-stat-card premium-reveal premium-delay-2 rounded-3xl p-8 text-center"><p class="text-4xl font-bold text-[#ffa119]">4</p><p class="mt-2 text-white/75">Corporate Control Pillars</p></div>
+        <div class="premium-stat-card premium-reveal premium-delay-3 rounded-3xl p-8 text-center"><p class="text-4xl font-bold text-[#ffa119]">NGO</p><p class="mt-2 text-white/75">Government &amp; Corporate Specialists</p></div>
+        <div class="premium-stat-card premium-reveal premium-delay-4 rounded-3xl p-8 text-center"><p class="text-4xl font-bold text-[#ffa119]">ESG</p><p class="mt-2 text-white/75">Sustainability Reporting Ready</p></div>
       </div>
       <div class="premium-reveal mx-auto mt-16 max-w-4xl text-center">
-        <h2 class="text-3xl font-extrabold tracking-[-0.035em] md:text-5xl">Ready to start your journey?</h2>
-        <p class="mt-5 text-lg leading-8 text-white/75">Send us your brief and we’ll recommend the right service path.</p>
-        <a class="premium-button-primary mt-8" href="/contact/">Get Started</a>
+        <h2 class="text-3xl font-extrabold tracking-[-0.035em] md:text-5xl">Ready to professionalize your travel program?</h2>
+        <p class="mt-5 text-lg leading-8 text-white/75">Send us your travel policy, recurring routes, team profile, or event brief and we’ll recommend the right management model.</p>
+        <a class="premium-button-primary mt-8" href="/contact/">Request Corporate Support</a>
       </div>
     </div>
   </section>

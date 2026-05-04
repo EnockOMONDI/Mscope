@@ -206,7 +206,7 @@ STATIC_BLOG_POSTS = [
         "image": "site_mirror/images/safari-hero.png",
     },
     {
-        "category": "Travel Support",
+        "category": "Support Services",
         "date": "November 18, 2025",
         "read_time": "7 min read",
         "title": "Ground Transport Planning for Delegations in Kenya",
@@ -239,12 +239,136 @@ STATIC_EXPERIENCES = [
 ]
 
 
+CORPORATE_SOLUTIONS = {
+    "technology_tools": {
+        "title": "Technology & Tools",
+        "page_title": "Travel Technology & Booking Tools Kenya | Multiscope Travel",
+        "meta_description": "Corporate travel technology support in Kenya: online booking workflows, policy controls, approval routing, traveller profiles, and integrated booking coordination.",
+        "canonical": "/services/technology-tools/",
+        "eyebrow": "Platform-led travel management",
+        "hero_title": "Travel tools that keep business trips controlled",
+        "hero_text": "We bring booking workflows, approval controls, traveller profiles, and supplier coordination into one managed travel process for corporate teams.",
+        "image": "site_mirror/images/transport-hero.png",
+        "dashboard_label": "Integrated Booking Workflow",
+        "dashboard_metrics": [
+            {"label": "Policy-aligned trips", "value": "96%"},
+            {"label": "Open approvals", "value": "14"},
+            {"label": "Active travellers", "value": "38"},
+        ],
+        "features": [
+            {"title": "Online Booking Tool Readiness", "description": "A structured booking flow for employees, approvers, and travel coordinators, built around company policy and supplier preferences."},
+            {"title": "Policy Controls", "description": "Cabin class, hotel tier, routing, advance purchase, and approval rules documented before tickets are issued."},
+            {"title": "Traveller Profiles", "description": "Repeat traveller preferences, passport details, contacts, seat requests, and loyalty notes kept consistent for faster servicing."},
+            {"title": "Supplier Integration", "description": "Air, hotel, transfer, insurance, and documentation requests are coordinated through a single accountable travel desk."},
+        ],
+        "process_title": "How the workflow supports corporate buyers",
+        "process": [
+            "Capture traveller request and policy requirements.",
+            "Route approvals before spend is confirmed.",
+            "Coordinate booking, documents, insurance, hotel, and transfers.",
+            "Track changes and close out with records for finance and operations.",
+        ],
+        "cta": "Design Your Booking Workflow",
+    },
+    "duty_of_care": {
+        "title": "Risk Management & Duty of Care",
+        "page_title": "Duty of Care Travel Management Kenya | Multiscope Travel",
+        "meta_description": "Duty of care and travel risk management in Kenya with 24/7 emergency support, traveller tracking, escalation workflows, and crisis communication.",
+        "canonical": "/services/risk-management-duty-of-care/",
+        "eyebrow": "Traveller safety and escalation",
+        "hero_title": "Know where your travellers are and how to support them",
+        "hero_text": "For corporate, NGO, government, and executive travel, Multiscope helps teams plan safer movement with traveller tracking, 24/7 escalation, and practical crisis support.",
+        "image": "site_mirror/images/immigration-hero.png",
+        "dashboard_label": "Duty of Care Monitor",
+        "dashboard_metrics": [
+            {"label": "Travellers monitored", "value": "42"},
+            {"label": "Open alerts", "value": "3"},
+            {"label": "Support coverage", "value": "24/7"},
+        ],
+        "features": [
+            {"title": "Traveller Tracking", "description": "Maintain visibility of traveller itineraries, arrival times, hotel locations, transfer movements, and destination plans."},
+            {"title": "24/7 Emergency Support", "description": "Escalation support for delays, missed flights, medical issues, civil disruption, itinerary changes, and urgent supplier coordination."},
+            {"title": "Risk-Aware Itineraries", "description": "Routes, timings, hotels, and transport plans reviewed for access, safety, reliability, and contingency options."},
+            {"title": "Crisis Communication", "description": "Clear contact trees and escalation notes for travellers, internal coordinators, security teams, and approving managers."},
+        ],
+        "process_title": "Duty of care workflow",
+        "process": [
+            "Map traveller profile, destination, route, timing, and risk notes.",
+            "Confirm emergency contacts, accommodation, transfers, and itinerary documents.",
+            "Monitor active movement and supplier handovers.",
+            "Escalate issues quickly and document close-out actions.",
+        ],
+        "cta": "Build a Duty of Care Plan",
+    },
+    "analytics_reporting": {
+        "title": "Actionable Insights & Travel Analytics",
+        "page_title": "Corporate Travel Analytics Kenya | Multiscope Travel",
+        "meta_description": "Travel analytics and reporting for Kenyan corporate travel programs, including spend visibility, savings insights, policy compliance, and supplier performance.",
+        "canonical": "/services/travel-analytics-reporting/",
+        "eyebrow": "Spend visibility for finance teams",
+        "hero_title": "Turn travel activity into decisions your CFO can use",
+        "hero_text": "We help travel managers and procurement teams understand spend, supplier performance, savings opportunities, and policy compliance across recurring travel.",
+        "image": "site_mirror/images/conferences-hero.png",
+        "dashboard_label": "Travel Spend Snapshot",
+        "dashboard_metrics": [
+            {"label": "Monthly spend tracked", "value": "KES 4.8M"},
+            {"label": "Savings flagged", "value": "12%"},
+            {"label": "Policy compliance", "value": "91%"},
+        ],
+        "features": [
+            {"title": "Spend Reporting", "description": "Track spend by department, traveller, project, destination, supplier, and service type."},
+            {"title": "Savings Insights", "description": "Identify advance-purchase gains, hotel rate opportunities, routing improvements, and supplier consolidation options."},
+            {"title": "Policy Compliance", "description": "Monitor exceptions, approvals, cabin class, hotel tiers, booking windows, and repeat traveller behavior."},
+            {"title": "Supplier Performance", "description": "Review air, hotel, transport, and documentation partners using cost, reliability, responsiveness, and service records."},
+        ],
+        "process_title": "Reporting rhythm",
+        "process": [
+            "Define the reporting fields procurement and finance need.",
+            "Capture transactions and trip records consistently.",
+            "Summarize spend, exceptions, savings, and supplier notes.",
+            "Use findings to improve the next travel cycle.",
+        ],
+        "cta": "Request a Reporting Framework",
+    },
+    "strategic_management": {
+        "title": "Strategic Travel Management",
+        "page_title": "Strategic Corporate Travel Management Kenya | Multiscope Travel",
+        "meta_description": "Strategic corporate travel management in Kenya for travel policy development, supplier negotiation, corporate rates, sustainability reporting, and procurement support.",
+        "canonical": "/services/strategic-travel-management/",
+        "eyebrow": "Consultancy for travel procurement",
+        "hero_title": "Move from booking trips to managing travel strategically",
+        "hero_text": "Multiscope supports procurement, finance, HR, and operations teams with policy design, supplier negotiation, rate management, and sustainability reporting.",
+        "image": "site_mirror/images/mice-hero.webp",
+        "dashboard_label": "Strategic Travel Program",
+        "dashboard_metrics": [
+            {"label": "Preferred suppliers", "value": "18"},
+            {"label": "Policy rules", "value": "32"},
+            {"label": "CO2 tracked", "value": "Yes"},
+        ],
+        "features": [
+            {"title": "Travel Policy Development", "description": "Write practical rules for approvals, cabin class, hotel tiers, per diem, booking windows, exceptions, and duty of care."},
+            {"title": "Supplier Negotiation", "description": "Consolidate demand and negotiate with airlines, hotels, transfer providers, venues, and specialist suppliers."},
+            {"title": "Corporate Rate Management", "description": "Maintain preferred rates, supplier terms, rooming processes, cancellation rules, and payment workflows."},
+            {"title": "Sustainability Reporting", "description": "Track CO2 indicators and responsible travel choices to support ESG and internal reporting requirements."},
+        ],
+        "process_title": "Strategic management workflow",
+        "process": [
+            "Audit current travel patterns, suppliers, pain points, and approval gaps.",
+            "Build the travel policy and preferred supplier approach.",
+            "Implement operational workflows for bookings, approvals, and reporting.",
+            "Review performance regularly and adjust supplier strategy.",
+        ],
+        "cta": "Start a Travel Program Review",
+    },
+}
+
+
 SERVICE_DETAIL_PAGES = {
     "inbound_safaris": {
         "page_title": "Inbound Safaris Kenya | Multiscope Travel",
         "meta_description": "Inbound Kenya safari planning for international visitors with wildlife circuits, lodges, guides, transfers, and beach extensions.",
         "canonical": "/services/tours-safaris/inbound-safaris",
-        "breadcrumb_parent": "Experiential Safaris",
+        "breadcrumb_parent": "Safaris",
         "breadcrumb_parent_url": "/services/tours-safaris/",
         "title": "Inbound Safaris",
         "eyebrow": "Iconic African wildlife adventures",
@@ -277,7 +401,7 @@ SERVICE_DETAIL_PAGES = {
         "page_title": "Tembea Kenya Tours | Multiscope Travel",
         "meta_description": "Tembea Kenya tours for residents, expats, and local travelers including coast escapes, Rift Valley trips, hikes, and safari getaways.",
         "canonical": "/services/tours-safaris/tembea-kenya",
-        "breadcrumb_parent": "Experiential Safaris",
+        "breadcrumb_parent": "Safaris",
         "breadcrumb_parent_url": "/services/tours-safaris/",
         "title": "Tembea Kenya Tours",
         "eyebrow": "Coast, highlands, Rift Valley, and safari escapes",
@@ -310,7 +434,7 @@ SERVICE_DETAIL_PAGES = {
         "page_title": "Ground Transport & Logistics Kenya | Multiscope Travel",
         "meta_description": "Professional ground transport and logistics in Kenya for safaris, corporate travel, events, airport transfers, and group movement.",
         "canonical": "/services/support-services/ground-transport-logistics",
-        "breadcrumb_parent": "Travel Support",
+        "breadcrumb_parent": "Support Services",
         "breadcrumb_parent_url": "/services/support-services/",
         "title": "Ground Transport & Logistics",
         "eyebrow": "Reliable ground mobility across Kenya",
@@ -343,7 +467,7 @@ SERVICE_DETAIL_PAGES = {
         "page_title": "Air Charter & Flight Logistics Kenya | Multiscope Travel",
         "meta_description": "Domestic flight coordination and air charter logistics across Kenya for safaris, executives, groups, and multi-destination programs.",
         "canonical": "/services/support-services/air-charter-flight-logistics",
-        "breadcrumb_parent": "Travel Support",
+        "breadcrumb_parent": "Support Services",
         "breadcrumb_parent_url": "/services/support-services/",
         "title": "Air & Charter Coordination",
         "eyebrow": "Domestic flight and charter support",
@@ -362,7 +486,7 @@ SERVICE_DETAIL_PAGES = {
             {"title": "Route Review", "description": "We assess destination, timing, group size, luggage, and access constraints."},
             {"title": "Flight Options", "description": "We compare scheduled and charter options against the program needs."},
             {"title": "Coordination", "description": "We align ground transfers, check-in times, airstrip access, and supplier schedules."},
-            {"title": "Travel Support", "description": "We monitor movements and adjust where practical if timing changes."},
+            {"title": "Traveller Support", "description": "We monitor movements and adjust where practical if timing changes."},
         ],
         "faqs": [
             {"question": "What is the difference between scheduled and charter flights?", "answer": "Scheduled flights follow fixed routes and times; charters are private options designed around your itinerary."},
@@ -376,7 +500,7 @@ SERVICE_DETAIL_PAGES = {
         "page_title": "Travel Documents & Visas Kenya | Multiscope Travel",
         "meta_description": "Kenya travel document support including ETA guidance, visa extension support, permits, insurance coordination, and group applications.",
         "canonical": "/services/support-services/travel-documents-and-visas",
-        "breadcrumb_parent": "Travel Support",
+        "breadcrumb_parent": "Support Services",
         "breadcrumb_parent_url": "/services/support-services/",
         "title": "Travel Documents & Visas",
         "eyebrow": "Entry facilitation and documentation support",
@@ -403,7 +527,7 @@ SERVICE_DETAIL_PAGES = {
             {"question": "Do you provide travel insurance?", "answer": "We can coordinate guidance and options through relevant providers where required."},
         ],
         "cta_title": "Ready to Prepare Your Travel Documents?",
-        "stats": [("100+", "Applications Supported"), ("24/7", "Travel Support"), ("1", "Clear Checklist")],
+        "stats": [("100+", "Applications Supported"), ("24/7", "Support Coverage"), ("1", "Clear Checklist")],
     },
     "immigration": {
         "page_title": "Immigration Services Kenya | Multiscope Travel",
@@ -479,6 +603,18 @@ def about_view(request):
 
 def services_view(request):
     return render(request, "pages/services.html")
+
+
+def services_corporate_travel_view(request):
+    return render(request, "pages/services_corporate_travel.html")
+
+
+def services_solution_detail_view(request, solution_key: str):
+    return render(
+        request,
+        "pages/corporate_solution_detail.html",
+        {"solution": CORPORATE_SOLUTIONS[solution_key]},
+    )
 
 
 def services_mice_view(request):

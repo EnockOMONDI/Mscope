@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_head %}
+  <title>{{ solution.page_title }}</title>
+  <meta name="description" content="{{ solution.meta_description }}" />
+  <link rel="canonical" href="{{ solution.canonical }}" />
+{% endblock %}
+
+{% block page_content %}
+<main class="premium-page text-gray-900">
+  <section class="premium-hero premium-mice-hero relative overflow-hidden bg-[#011a1f] text-white">
+    <div class="absolute inset-0">
+      <img src="{% static solution.image %}" alt="{{ solution.title }}" class="h-full w-full object-cover opacity-25" />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#011a1f] via-[#011a1f]/90 to-[#011a1f]/55"></div>
+    </div>
+    <div class="premium-container premium-mice-hero-inner relative">
+      <div class="premium-hero-grid">
+        <div class="premium-hero-copy-wide premium-mice-hero-copy premium-reveal premium-reveal-left">
+          <p class="premium-mice-hero-pill inline-flex rounded-full bg-white/10 px-5 py-2 text-sm font-bold text-[#ffa119] ring-1 ring-white/15">{{ solution.eyebrow }}</p>
+          <h1 class="text-4xl font-extrabold leading-tight tracking-[-0.045em] md:text-6xl lg:text-7xl">{{ solution.hero_title }}</h1>
+          <p class="premium-mice-hero-text max-w-3xl text-lg text-white/80 md:text-xl">{{ solution.hero_text }}</p>
+          <div class="premium-mice-hero-actions flex flex-col sm:flex-row">
+            <a class="premium-button-primary" href="/contact/">{{ solution.cta }}</a>
+            <a class="premium-button-secondary" href="/services/">All Corporate Solutions</a>
+          </div>
+        </div>
+        <aside class="premium-card hidden bg-white/95 p-6 text-[#011a1f] lg:block">
+          <p class="text-sm font-bold uppercase tracking-wider text-[#d75128]">{{ solution.dashboard_label }}</p>
+          <div class="mt-6 space-y-4">
+            {% for metric in solution.dashboard_metrics %}
+              <div class="rounded-2xl border border-slate-100 bg-slate-50 p-5">
+                <p class="text-3xl font-extrabold text-[#011a1f]">{{ metric.value }}</p>
+                <p class="mt-1 text-sm font-semibold text-slate-500">{{ metric.label }}</p>
+              </div>
+            {% endfor %}
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="premium-section bg-white">
+    <div class="premium-container">
+      <div class="premium-reveal mx-auto mb-12 max-w-4xl text-center">
+        <p class="premium-eyebrow justify-center">{{ solution.title }}</p>
+        <h2 class="premium-heading mt-4 text-3xl md:text-5xl">Built for procurement, finance, operations, and travel managers</h2>
+      </div>
+      <div class="grid gap-7 md:grid-cols-2">
+        {% for feature in solution.features %}
+          <article class="premium-card premium-text-card premium-reveal">
+            <div class="premium-feature-icon">✓</div>
+            <h3 class="text-2xl font-extrabold text-[#011a1f]">{{ feature.title }}</h3>
+            <p class="text-gray-600">{{ feature.description }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="premium-section">
+    <div class="premium-container">
+      <div class="grid gap-12 lg:grid-cols-[0.85fr_1.15fr]">
+        <div class="premium-reveal">
+          <p class="premium-eyebrow">{{ solution.eyebrow }}</p>
+          <h2 class="premium-heading mt-4 text-3xl md:text-5xl">{{ solution.process_title }}</h2>
+          <p class="mt-5 text-lg leading-8 text-gray-600">The objective is simple: reduce friction, improve visibility, and make corporate travel easier to control.</p>
+        </div>
+        <div class="space-y-5">
+          {% for step in solution.process %}
+            <article class="premium-card flex gap-5 p-6 premium-reveal">
+              <div class="flex h-11 w-11 min-w-11 items-center justify-center rounded-xl bg-gradient-to-br from-[#d75128] to-[#ffa119] font-extrabold text-white">{{ forloop.counter }}</div>
+              <p class="text-lg leading-8 text-gray-700">{{ step }}</p>
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="premium-section bg-[#011a1f] text-white">
+    <div class="premium-container text-center">
+      <div class="premium-reveal mx-auto max-w-4xl">
+        <p class="premium-eyebrow justify-center text-[#ffa119]">Corporate Travel Management</p>
+        <h2 class="mt-4 text-3xl font-extrabold tracking-[-0.045em] md:text-5xl">Ready to professionalize your travel program?</h2>
+        <p class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/75">Send your current pain points, traveller profile, and approval structure. We will recommend the right operating model.</p>
+        <a class="premium-button-primary mt-8" href="/contact/">{{ solution.cta }}</a>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
