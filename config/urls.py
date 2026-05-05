@@ -27,6 +27,7 @@ from core.views import (
     home_view,
     mirrored_page,
     privacy_view,
+    seo_landing_view,
     services_mice_conferences_view,
     services_mice_events_exhibitions_view,
     services_mice_incentive_travel_view,
@@ -85,6 +86,14 @@ urlpatterns = [
     path('services/support-services/air-charter-flight-logistics/', services_support_air_charter_view, name='services_support_air_charter'),
     path('services/support-services/travel-documents-and-visas/', services_support_travel_documents_view, name='services_support_travel_documents'),
     path('services/immigration-services/', services_immigration_view, name='services_immigration'),
+    path('travel-management-company-kenya/', seo_landing_view, {"page_key": "travel_management_company"}, name='travel_management_company_kenya'),
+    path('corporate-travel-management-kenya/', seo_landing_view, {"page_key": "corporate_travel_management"}, name='corporate_travel_management_kenya'),
+    path('corporate-travel-service-kenya/', seo_landing_view, {"page_key": "corporate_travel_service"}, name='corporate_travel_service_kenya'),
+    path('corporate-travel-company-kenya/', seo_landing_view, {"page_key": "corporate_travel_company"}, name='corporate_travel_company_kenya'),
+    path('mice-logistics-kenya/', seo_landing_view, {"page_key": "mice_logistics"}, name='mice_logistics_kenya'),
+    path('ngo-travel-management-kenya/', seo_landing_view, {"page_key": "ngo_travel_management"}, name='ngo_travel_management_kenya'),
+    path('executive-travel-kenya/', seo_landing_view, {"page_key": "executive_travel"}, name='executive_travel_kenya'),
+    path('duty-of-care-travel-kenya/', seo_landing_view, {"page_key": "duty_of_care_travel"}, name='duty_of_care_travel_kenya'),
     path('<path:slug>/', mirrored_page, name='mirrored_page'),
 ]
 

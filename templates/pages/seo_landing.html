@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_head %}
+  <title>{{ landing_page.page_title }}</title>
+  <meta name="description" content="{{ landing_page.meta_description }}" />
+  <link rel="canonical" href="/{{ landing_page.slug }}/" />
+  <script type="application/ld+json">{{ schema_json|safe }}</script>
+{% endblock %}
+
+{% block page_content %}
+<main class="premium-page text-gray-900">
+  <section class="premium-hero premium-mice-hero relative overflow-hidden bg-[#011a1f] text-white">
+    <div class="absolute inset-0">
+      <img src="{% static landing_page.image %}" alt="{{ landing_page.title }}" class="h-full w-full object-cover opacity-25" />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#011a1f] via-[#011a1f]/90 to-[#011a1f]/55"></div>
+    </div>
+    <div class="premium-container premium-mice-hero-inner relative">
+      <div class="premium-hero-copy-wide premium-mice-hero-copy premium-reveal premium-reveal-left">
+        <p class="premium-mice-hero-pill inline-flex rounded-full bg-white/10 px-5 py-2 text-sm font-bold text-[#ffa119] ring-1 ring-white/15">{{ landing_page.eyebrow }}</p>
+        <h1 class="text-4xl font-extrabold leading-tight tracking-[-0.045em] md:text-6xl lg:text-7xl">{{ landing_page.hero_title }}</h1>
+        <p class="premium-mice-hero-text max-w-3xl text-lg text-white/80 md:text-xl">{{ landing_page.hero_text }}</p>
+        <div class="premium-mice-hero-actions flex flex-col sm:flex-row">
+          <a class="premium-button-primary" href="/contact/">{{ landing_page.cta }}</a>
+          <a class="premium-button-secondary" href="/verify/">Verify Official Channels</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="premium-section bg-white">
+    <div class="premium-container">
+      <div class="grid gap-12 lg:grid-cols-[0.82fr_1.18fr]">
+        <div class="premium-reveal">
+          <p class="premium-eyebrow">Why it matters</p>
+          <h2 class="premium-heading mt-4 text-3xl md:text-5xl">{{ landing_page.title }}</h2>
+          <p class="mt-6 text-lg leading-8 text-gray-600">{{ landing_page.positioning }}</p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-2">
+          {% for section in landing_page.sections %}
+            <article class="premium-card premium-text-card premium-reveal">
+              <div class="premium-feature-icon">{{ forloop.counter|stringformat:"02d" }}</div>
+              <h3 class="text-2xl font-extrabold text-[#011a1f]">{{ section.title }}</h3>
+              <p class="text-gray-600">{{ section.description }}</p>
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% include "partials/_trusted_partners.html" %}
+
+  <section class="premium-section">
+    <div class="premium-container">
+      <div class="premium-reveal mx-auto mb-12 max-w-4xl text-center">
+        <p class="premium-eyebrow justify-center">Buyer Questions</p>
+        <h2 class="premium-heading mt-4 text-3xl md:text-5xl">Clear answers for corporate travel buyers</h2>
+      </div>
+      <div class="mx-auto max-w-5xl space-y-4">
+        {% for faq in landing_page.faqs %}
+          <details class="premium-card premium-faq-card premium-reveal" {% if forloop.first %}open{% endif %}>
+            <summary>{{ faq.question }}</summary>
+            <div class="premium-faq-answer">{{ faq.answer }}</div>
+          </details>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="premium-section bg-white">
+    <div class="premium-container">
+      <div class="premium-reveal mx-auto mb-10 max-w-4xl text-center">
+        <p class="premium-eyebrow justify-center">Related Capabilities</p>
+        <h2 class="premium-heading mt-4 text-3xl md:text-5xl">Explore more managed travel support</h2>
+      </div>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        {% for page in related_pages %}
+          <a class="premium-card premium-text-card premium-reveal" href="/{{ page.slug }}/">
+            <h3 class="text-xl font-bold text-[#011a1f]">{{ page.title }}</h3>
+            <p class="text-gray-600">{{ page.hero_text }}</p>
+            <span class="premium-card-link inline-flex font-bold text-[#d75128]">View Page</span>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="premium-section bg-[#011a1f] text-white">
+    <div class="premium-container text-center">
+      <div class="premium-reveal mx-auto max-w-4xl">
+        <p class="premium-eyebrow justify-center text-[#ffa119]">Multiscope Travel</p>
+        <h2 class="mt-4 text-3xl font-extrabold tracking-[-0.045em] md:text-5xl">Need a Kenya-based corporate travel partner?</h2>
+        <p class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/75">Send your travel brief, recurring routes, approval process, or event scope. We will recommend the right management model.</p>
+        <a class="premium-button-primary mt-8" href="/contact/">{{ landing_page.cta }}</a>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}

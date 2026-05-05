@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 
 from django.conf import settings
@@ -363,6 +364,194 @@ CORPORATE_SOLUTIONS = {
 }
 
 
+SEO_LANDING_PAGES = {
+    "travel_management_company": {
+        "slug": "travel-management-company-kenya",
+        "title": "Travel Management Company Kenya",
+        "page_title": "Travel Management Company Kenya | Multiscope Travel",
+        "meta_description": "Multiscope Travel is a travel management company in Kenya helping organizations manage business travel, approvals, traveller support, supplier coordination, reporting, and MICE logistics.",
+        "eyebrow": "Travel Management Company Kenya",
+        "hero_title": "A travel management company for organizations operating in Kenya",
+        "hero_text": "Multiscope Travel helps companies, NGOs, executive offices, and event teams manage business travel through one coordinated Kenya-based team.",
+        "image": "site_mirror/images/transport-hero.png",
+        "positioning": "Where global providers lead with scale, Multiscope competes through high-touch local execution, practical supplier control, and responsive traveller support.",
+        "sections": [
+            {"title": "Managed travel coordination", "description": "Flights, hotels, transfers, documentation, insurance, traveller communication, and supplier follow-up handled through one accountable desk."},
+            {"title": "Policy-aware support", "description": "Booking choices can be aligned to company rules, approvals, budgets, traveller categories, and exception handling."},
+            {"title": "Visibility for decision-makers", "description": "Travel records, supplier notes, spend summaries, and policy exceptions give procurement and finance clearer control."},
+            {"title": "Kenya-based execution", "description": "Local knowledge supports airport handling, ground movement, venue access, route planning, and on-ground issue resolution."},
+        ],
+        "faqs": [
+            {"question": "What does a travel management company do?", "answer": "A travel management company helps organizations plan, book, control, support, and report on business travel instead of leaving each traveller or department to manage trips separately."},
+            {"question": "Is Multiscope Travel a travel management company in Kenya?", "answer": "Yes. Multiscope Travel provides managed corporate travel support in Kenya, including business travel coordination, MICE logistics, traveller support, documentation, transport, and reporting."},
+            {"question": "Who should use a travel management company?", "answer": "Companies, NGOs, government programs, education institutions, associations, and executive offices benefit when travel involves approvals, multiple suppliers, recurring routes, duty of care, or reporting needs."},
+        ],
+        "cta": "Request Travel Management Support",
+    },
+    "corporate_travel_management": {
+        "slug": "corporate-travel-management-kenya",
+        "title": "Corporate Travel Management Kenya",
+        "page_title": "Corporate Travel Management Kenya | Multiscope Travel",
+        "meta_description": "Corporate travel management in Kenya for organizations needing business travel booking, policy controls, traveller support, duty of care, MICE logistics, and reporting.",
+        "eyebrow": "Corporate Travel Management",
+        "hero_title": "Corporate travel management built around control and traveller support",
+        "hero_text": "Multiscope Travel helps organizations coordinate corporate travel, approvals, suppliers, documentation, risk response, and reporting across Kenya.",
+        "image": "site_mirror/images/conferences-hero.png",
+        "positioning": "This page targets buyers comparing corporate travel management providers such as global TMCs and established Kenyan agencies, while positioning Multiscope as a boutique alternative.",
+        "sections": [
+            {"title": "Business travel bookings", "description": "Domestic, regional, and international air ticketing, hotel reservations, transfers, insurance, and travel document coordination."},
+            {"title": "Traveller support", "description": "Practical help before and during travel, including itinerary changes, delays, arrivals, emergency contact escalation, and supplier coordination."},
+            {"title": "Approval and policy structure", "description": "Support for company travel rules, approval steps, booking windows, rooming standards, route choices, and exceptions."},
+            {"title": "Post-trip visibility", "description": "Trip records, supplier notes, spend summaries, and reporting inputs for finance, procurement, and operations teams."},
+        ],
+        "faqs": [
+            {"question": "What is corporate travel management?", "answer": "Corporate travel management is the structured planning, booking, support, and reporting of business travel for an organization."},
+            {"question": "What corporate travel management services does Multiscope provide?", "answer": "Multiscope supports air ticketing, hotel bookings, transfers, documentation, insurance, MICE logistics, traveller support, and travel reporting."},
+            {"question": "Can Multiscope support recurring company travel?", "answer": "Yes. Multiscope can support recurring travel for executives, staff teams, projects, NGOs, delegations, and conference programs."},
+        ],
+        "cta": "Start Corporate Travel Management",
+    },
+    "corporate_travel_service": {
+        "slug": "corporate-travel-service-kenya",
+        "title": "Corporate Travel Service Kenya",
+        "page_title": "Corporate Travel Service Kenya | Multiscope Travel",
+        "meta_description": "Corporate travel service in Kenya for flights, hotels, transfers, visas, ETA, travel insurance, meet and assist, executive movement, and business traveller support.",
+        "eyebrow": "Corporate Travel Service",
+        "hero_title": "Corporate travel services for business travellers and teams",
+        "hero_text": "Use one Kenya-based partner for flights, hotels, documentation, transfers, meet-and-assist, car hire, insurance, and traveller support.",
+        "image": "site_mirror/images/immigration-hero.png",
+        "positioning": "This page focuses on practical service intent for buyers searching for a corporate travel service rather than broader strategic travel management.",
+        "sections": [
+            {"title": "Flights and hotels", "description": "Route checks, ticketing coordination, hotel sourcing, negotiated rates, rooming lists, and itinerary records."},
+            {"title": "Documents and insurance", "description": "Kenya ETA guidance, visa support, document checklists, insurance coordination, and traveller follow-up."},
+            {"title": "Transfers and car hire", "description": "Airport transfers, executive cars, vans, buses, group movement, and event shuttles coordinated with timing control."},
+            {"title": "Meet and assist", "description": "Airport arrival guidance, VIP handling, departure coordination, and practical support for visiting teams and executives."},
+        ],
+        "faqs": [
+            {"question": "What is included in a corporate travel service?", "answer": "A corporate travel service can include flights, hotels, transfers, visas, insurance, traveller support, meet-and-assist, and travel records."},
+            {"question": "Can you support executive movement?", "answer": "Yes. Multiscope can coordinate executive airport transfers, chauffeur support, hotel movement, venue transfers, and confidential itinerary handling."},
+            {"question": "Do you handle group corporate travel?", "answer": "Yes. Multiscope supports group movement for meetings, delegations, conferences, incentives, and project teams."},
+        ],
+        "cta": "Request Corporate Travel Service",
+    },
+    "corporate_travel_company": {
+        "slug": "corporate-travel-company-kenya",
+        "title": "Corporate Travel Company Kenya",
+        "page_title": "Corporate Travel Company Kenya | Multiscope Travel",
+        "meta_description": "A corporate travel company in Kenya for organizations needing business travel support, MICE logistics, executive movement, traveller care, reporting, and local coordination.",
+        "eyebrow": "Corporate Travel Company",
+        "hero_title": "A corporate travel company for high-touch Kenya programs",
+        "hero_text": "Multiscope Travel supports organizations that need responsive service, reliable local execution, and corporate travel coordination without a mass-market approach.",
+        "image": "site_mirror/images/mice-hero.webp",
+        "positioning": "Against larger local and global competitors, Multiscope should win on clarity, responsiveness, local expertise, and premium coordination.",
+        "sections": [
+            {"title": "Boutique responsiveness", "description": "A practical team structure for organizations that need faster communication and hands-on travel support."},
+            {"title": "Corporate-first coordination", "description": "Business travel, executive movement, MICE logistics, and reporting positioned as core services rather than add-ons."},
+            {"title": "Sector understanding", "description": "Support for NGOs, government programs, corporate teams, education groups, energy teams, conferences, and associations."},
+            {"title": "Payment and channel verification", "description": "Official channels and payment safety guidance reduce confusion and help clients avoid impersonation risks."},
+        ],
+        "faqs": [
+            {"question": "How is a corporate travel company different from a tour operator?", "answer": "A corporate travel company focuses on business travel control, approvals, traveller support, reporting, duty of care, and supplier coordination. A tour operator usually focuses on leisure packages and experiences."},
+            {"question": "Why choose a boutique corporate travel company?", "answer": "A boutique provider can give more responsive support, closer local coordination, and hands-on attention to complex or sensitive travel programs."},
+            {"question": "Does Multiscope handle leisure travel too?", "answer": "Yes, but leisure and safari experiences are positioned as incentive travel, executive retreats, team programs, and hosted Kenya experiences."},
+        ],
+        "cta": "Work With Multiscope",
+    },
+    "mice_logistics": {
+        "slug": "mice-logistics-kenya",
+        "title": "MICE Logistics Kenya",
+        "page_title": "MICE Logistics Kenya | Meetings, Incentives, Conferences & Events",
+        "meta_description": "MICE logistics in Kenya for meetings, incentives, conferences, exhibitions, delegate transport, hotels, venues, registration, supplier coordination, and on-ground event support.",
+        "eyebrow": "MICE Logistics Kenya",
+        "hero_title": "MICE logistics for conferences, incentives, and corporate events in Kenya",
+        "hero_text": "Multiscope Travel coordinates the moving parts behind successful meetings, incentives, conferences, exhibitions, and destination-led corporate programs.",
+        "image": "site_mirror/images/mice-hero.webp",
+        "positioning": "MICE is a high-value opportunity because corporate buyers search for logistics, venue support, delegate movement, and on-ground execution.",
+        "sections": [
+            {"title": "Delegate logistics", "description": "Accommodation, airport transfers, venue shuttles, rooming lists, arrivals, departures, and movement schedules."},
+            {"title": "Venue and supplier coordination", "description": "Venue sourcing, AV, catering, branding, production suppliers, permits, and on-site operational support."},
+            {"title": "Incentive program design", "description": "Reward travel and executive experiences that combine Kenya's destination appeal with disciplined travel logistics."},
+            {"title": "On-ground control", "description": "Event-day coordination, supplier timing, issue resolution, and post-event reporting for internal teams."},
+        ],
+        "faqs": [
+            {"question": "What does MICE logistics include?", "answer": "MICE logistics can include venues, delegate transport, hotels, registration, supplier coordination, AV, catering, event production, and on-ground support."},
+            {"question": "Can Multiscope support conferences outside Nairobi?", "answer": "Yes. Multiscope can coordinate conferences and corporate programs in Nairobi, the coast, the Rift Valley, safari destinations, and other Kenya locations."},
+            {"question": "Can MICE programs include safari or local experiences?", "answer": "Yes. Safari, culture, coast, wellness, conservation, and team-building experiences can be integrated as incentive or post-conference programs."},
+        ],
+        "cta": "Plan MICE Logistics",
+    },
+    "ngo_travel_management": {
+        "slug": "ngo-travel-management-kenya",
+        "title": "NGO Travel Management Kenya",
+        "page_title": "NGO Travel Management Kenya | Multiscope Travel",
+        "meta_description": "NGO travel management in Kenya for field teams, donor visits, project travel, duty of care, documentation, ground transport, reporting, and MICE logistics.",
+        "eyebrow": "NGO Travel Management",
+        "hero_title": "Travel management for NGOs, projects, and field teams in Kenya",
+        "hero_text": "Multiscope Travel supports NGO travel with practical route planning, documentation, ground movement, duty of care, supplier coordination, and reporting records.",
+        "image": "site_mirror/images/transport-hero.png",
+        "positioning": "NGO travel is a strong differentiator because it needs cost control, safety, documentation, remote movement, and donor-facing professionalism.",
+        "sections": [
+            {"title": "Field movement support", "description": "Airport transfers, project-site movement, upcountry routing, driver coordination, and contingency planning."},
+            {"title": "Donor and delegation visits", "description": "Hotels, arrivals, transport, meeting support, site visits, and hosted itinerary coordination."},
+            {"title": "Duty of care", "description": "Traveller visibility, emergency contact structure, route notes, risk-aware timing, and escalation support."},
+            {"title": "Records and reporting", "description": "Trip records, supplier notes, traveller lists, invoices, and summaries that support operations and finance teams."},
+        ],
+        "faqs": [
+            {"question": "Do NGOs need travel management support?", "answer": "Yes. NGO travel often involves multiple travellers, field routes, donor visits, documentation, duty of care, budget controls, and reporting needs."},
+            {"question": "Can Multiscope support field travel outside Nairobi?", "answer": "Yes. Multiscope can support travel planning and movement coordination across Kenya depending on route, timing, and security requirements."},
+            {"question": "Can you help with NGO conferences and workshops?", "answer": "Yes. Multiscope can coordinate MICE logistics, venues, accommodation, transfers, and participant movement for NGO workshops and conferences."},
+        ],
+        "cta": "Discuss NGO Travel Support",
+    },
+    "executive_travel": {
+        "slug": "executive-travel-kenya",
+        "title": "Executive Travel Kenya",
+        "page_title": "Executive Travel Kenya | VIP & Business Travel Support",
+        "meta_description": "Executive travel support in Kenya for VIP airport transfers, meet and assist, hotels, itinerary control, confidential movement, traveller support, and corporate logistics.",
+        "eyebrow": "Executive Travel Kenya",
+        "hero_title": "Executive travel support with discretion and control",
+        "hero_text": "Multiscope Travel coordinates executive movement, VIP arrivals, premium accommodation, chauffeur support, itinerary changes, and confidential traveller assistance.",
+        "image": "site_mirror/images/charter-flights-hero.jpg",
+        "positioning": "Executive travel should feel calm, discreet, and professionally controlled, with fewer visible moving parts for the traveller.",
+        "sections": [
+            {"title": "VIP arrivals and departures", "description": "Meet-and-assist, airport transfers, luggage coordination, and time-sensitive arrival support."},
+            {"title": "Premium accommodation", "description": "Hotel sourcing, room preferences, late check-ins, extended stays, and discreet reservation support."},
+            {"title": "Executive movement", "description": "Chauffeur-driven cars, venue transfers, board meeting movement, and itinerary timing control."},
+            {"title": "Responsive changes", "description": "Support for flight changes, urgent route adjustments, meeting delays, and last-minute traveller needs."},
+        ],
+        "faqs": [
+            {"question": "What is executive travel support?", "answer": "Executive travel support includes discreet coordination for flights, airport arrivals, hotels, transfers, itinerary timing, and traveller assistance."},
+            {"question": "Can Multiscope coordinate VIP transfers?", "answer": "Yes. Multiscope can arrange airport transfers, chauffeur support, executive vehicles, and movement between hotels, offices, and venues."},
+            {"question": "Do you handle confidential itineraries?", "answer": "Yes. Executive travel can be handled with careful communication, limited sharing, and practical coordination through verified contacts."},
+        ],
+        "cta": "Request Executive Travel Support",
+    },
+    "duty_of_care_travel": {
+        "slug": "duty-of-care-travel-kenya",
+        "title": "Duty of Care Travel Kenya",
+        "page_title": "Duty of Care Travel Kenya | Traveller Safety & Risk Support",
+        "meta_description": "Duty of care travel support in Kenya with traveller tracking, emergency escalation, risk-aware routing, itinerary visibility, and corporate travel safety coordination.",
+        "eyebrow": "Duty of Care Travel",
+        "hero_title": "Traveller safety support for organizations moving people in Kenya",
+        "hero_text": "Multiscope Travel helps organizations know where travellers are, how they are moving, who to contact, and how to respond when plans change.",
+        "image": "site_mirror/images/immigration-thumb.webp",
+        "positioning": "Duty of care is one of the clearest ways to separate corporate travel management from ordinary booking services.",
+        "sections": [
+            {"title": "Traveller visibility", "description": "Maintain practical records of traveller itineraries, accommodation, transfers, routes, and active movement."},
+            {"title": "Emergency escalation", "description": "Set contact trees and escalation paths for delays, missed flights, route issues, medical concerns, or urgent changes."},
+            {"title": "Risk-aware routing", "description": "Review route choices, transfer timing, accommodation location, access constraints, and contingency options."},
+            {"title": "Communication discipline", "description": "Keep travellers, coordinators, suppliers, and managers aligned before and during movement."},
+        ],
+        "faqs": [
+            {"question": "What is duty of care in corporate travel?", "answer": "Duty of care means an organization has a responsibility to plan, monitor, and support employee or guest travel with reasonable safety and escalation measures."},
+            {"question": "Does duty of care only apply to international travel?", "answer": "No. Duty of care also applies to domestic travel, field movement, conference travel, executive travel, and group movement within Kenya."},
+            {"question": "How does Multiscope support duty of care?", "answer": "Multiscope supports duty of care through itinerary visibility, traveller tracking inputs, emergency contacts, supplier coordination, and risk-aware logistics planning."},
+        ],
+        "cta": "Create a Duty of Care Plan",
+    },
+}
+
+
 SERVICE_DETAIL_PAGES = {
     "inbound_safaris": {
         "page_title": "Inbound Safaris Kenya | Multiscope Travel",
@@ -614,6 +803,58 @@ def services_solution_detail_view(request, solution_key: str):
         request,
         "pages/corporate_solution_detail.html",
         {"solution": CORPORATE_SOLUTIONS[solution_key]},
+    )
+
+
+def seo_landing_view(request, page_key: str):
+    page = SEO_LANDING_PAGES[page_key]
+    schema = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Service",
+                "name": page["title"],
+                "description": page["meta_description"],
+                "provider": {
+                    "@type": "TravelAgency",
+                    "name": "Multiscope Travel",
+                    "url": "https://www.multiscopetravel.com/",
+                    "telephone": "+254726436676",
+                    "email": "travel@multiscopetravel.com",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Adventist Centre, 3 Riverside Drive, Chiromo",
+                        "addressLocality": "Nairobi",
+                        "addressCountry": "KE",
+                    },
+                },
+                "areaServed": {"@type": "Country", "name": "Kenya"},
+                "url": f"https://www.multiscopetravel.com/{page['slug']}/",
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": faq["question"],
+                        "acceptedAnswer": {"@type": "Answer", "text": faq["answer"]},
+                    }
+                    for faq in page["faqs"]
+                ],
+            },
+        ],
+    }
+    related_pages = [
+        item for key, item in SEO_LANDING_PAGES.items() if key != page_key
+    ][:4]
+    return render(
+        request,
+        "pages/seo_landing.html",
+        {
+            "landing_page": page,
+            "related_pages": related_pages,
+            "schema_json": json.dumps(schema),
+        },
     )
 
 
